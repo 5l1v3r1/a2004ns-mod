@@ -132,24 +132,24 @@ var MSG_BEST_CHANNEL_POST="channel"
 var MSG_KEY_LENGTH_DESC="Key length = "
 
 // config_wizard
-var MSG_BLANK_ACCOUNT="사용자 계정을 입력해야 합니다."
-var MSG_BLANK_PASSWORD="사용자 암호를 입력해야 합니다."
+var MSG_BLANK_ACCOUNT="Put the User ID."
+var MSG_BLANK_PASSWORD="Put the Password."
 
-var MSG_INVALID_IP="IP주소가 잘못되었습니다."
-var MSG_INVALID_NETMASK="서브넷 마스크가 잘못되었습니다."
-var MSG_INVALID_GATEWAY="기본 게이트웨이가 잘못되었습니다."
-var MSG_INVALID_FDNS="기본 DNS서버주소가 잘못되었습니다"
-var MSG_INVALID_SDNS="보조 DNS서버주소가 잘못되었습니다"
+var MSG_INVALID_IP="Invalid IP Address."
+var MSG_INVALID_NETMASK="Invalid subnet mask."
+var MSG_INVALID_GATEWAY="Invalid default gateway."
+var MSG_INVALID_FDNS="Invalid primary DNS"
+var MSG_INVALID_SDNS="Invalid secondary DNS"
 
 
 //netconf_lansetup
-var NETCONF_INTERNAL_INVALID_NETWORK="IP 주소가 외부 네트워크와 같습니다."
-var STATIC_LEASE_ALREADY_EXIST_IPADDRESS="이미 등록된 IP주소 입니다."
-var STATIC_LEASE_ALREADY_EXIST_HWADDRESS="이미 등록된 MAC주소 입니다."
+var NETCONF_INTERNAL_INVALID_NETWORK="Lan address is the same as WAN address."
+var STATIC_LEASE_ALREADY_EXIST_IPADDRESS="This IP Address has been already added."
+var STATIC_LEASE_ALREADY_EXIST_HWADDRESS="This MAC Address has been already added."
 
-var NETCONF_INTERNAL_TOO_SMALL_LEASETIME="IP 대여시간을 10초이상으로 설정하십시오."
-var NETCONF_INTERNAL_TOO_BIG_LEASETIME="IP 대여시간을 2147483647초 이하로 설정하십시오." 
-var NETCONF_INTERNAL_INVALID_LEASETIME="IP 대여시간을 숫자로 입력해야 합니다."
+var NETCONF_INTERNAL_TOO_SMALL_LEASETIME="Lease time should be over 10 seconds."
+var NETCONF_INTERNAL_TOO_BIG_LEASETIME="Lease time should be under 2147483647 seconds."
+var NETCONF_INTERNAL_INVALID_LEASETIME="Lease time should be numeric."
 
 //netconf_wansetup
 var NETCONF_INTERNET_DHCP_MTU_INVALID="MTU 값은 1500을 초과할수 없습니다."
