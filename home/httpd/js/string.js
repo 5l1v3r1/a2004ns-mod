@@ -100,36 +100,36 @@ var MSG_INVALID_VALUE="Invalid value."
 
 
 // wireless_config_wizard
-var MSG_INVALID_WEP_KEY_HEXVALUE2="글자 입력시에는 16진수값을 입력하여야 합니다."
-var MSG_INVALID_WPAPSK_KEY_MISMATCH="두개의 네트워크 암호가 일치하지 않습니다.\n같은 암호를 두번 입력해야 합니다."
+var MSG_INVALID_WEP_KEY_HEXVALUE2="Network key should be hex decimal string."
+var MSG_INVALID_WPAPSK_KEY_MISMATCH="Network Key is different.\nPut the same key."
 
 // sysconf_configmgmt
-var MSG_RESTOREFILE_BLANK="복구할 설정파일을 선택하십시오."
+var MSG_RESTOREFILE_BLANK="Select a configuration backup file."
 
 //natrouterconf
-var MSG_RULE_NAME_IS_BLANK="규칙이름이 없습니다!"
+var MSG_RULE_NAME_IS_BLANK="Rule name is blank."
 
 
 // wirelessconf_wdssetup
-var MSG_WDS_DEL_WARNING="WDS 설정을 삭제하시겠습니까?" 
-var MSG_APADD_REQUEST_APPLY="'추가' 버튼을 클릭하면, WDS설정이 완료됩니다."   
+var MSG_WDS_DEL_WARNING="Are you sure to delete WDS?" 
+var MSG_APADD_REQUEST_APPLY="If press 'Add' button, WDS configuration will be done."
 
 // wirelessconf_basicsetup
-var MSG_BLANK_SSID="네크워크이름(SSID)을 입력해야 합니다."
-var MSG_INVALID_WEP_KEY_LENGTH="네트워크 암호의 길이가 잘못되었습니다."
-var MSG_INVALID_WEP_KEY_HEXVALUE="네트워크 암호 값에 16진수값을 입력하여야 합니다."
-var MSG_INVALID_WPAPSK_KEY_LENGTH="네트워크 암호를 8글자이상 입력하십시오."
-var MSG_INVALID_5_KEY_LENGTH="정확히 5글자의 암호를 입력하십시오."
-var MSG_INVALID_13_KEY_LENGTH="정확히 13글자의 암호를 입력하십시오."
-var SAVE_CONFIGURATION_STRING="설정을 저장하시겠습니까?"
+var MSG_BLANK_SSID="Put the SSID."
+var MSG_INVALID_WEP_KEY_LENGTH="Invalid network key length."
+var MSG_INVALID_WEP_KEY_HEXVALUE="Network key should be hex decimal."
+var MSG_INVALID_WPAPSK_KEY_LENGTH="Network key should be more than 8 characters."
+var MSG_INVALID_5_KEY_LENGTH="Network Key should be 5 characters."
+var MSG_INVALID_13_KEY_LENGTH="Network Key should be 13 characters."
+var SAVE_CONFIGURATION_STRING="Save all configuration?"
 
-var MSG_BLANK_REQUEST_SSID="네크워크이름(SSID)을 입력한 후 '적용' 버튼을 클릭합니다."
-var MSG_INVALID_REQUEST_KEY="네트워크 암호를 입력한 후 '적용' 버튼을 클릭합니다."
-var MSG_INVALID_REQUEST_APPLY="'적용' 버튼을 클릭하면, 선택된 AP로 접속됩니다."
-var MSG_APPLY_REQUEST_KEY="'적용' 버튼을 클릭하면 선택한 채널이 적용됩니다."
-var MSG_BEST_CHANNEL_PRE="검색된 최적의 채널은 " 
-var MSG_BEST_CHANNEL_POST="번 입니다."
-var MSG_KEY_LENGTH_DESC="암호 길이 = "
+var MSG_BLANK_REQUEST_SSID="Put the SSID, and press 'Apply' button."
+var MSG_INVALID_REQUEST_KEY="Put the Network key and press 'Apply' button."
+var MSG_INVALID_REQUEST_APPLY="Press 'Apply' button to connect specified AP."
+var MSG_APPLY_REQUEST_KEY="Press 'Apply' button to apply the channel"
+var MSG_BEST_CHANNEL_PRE="Best channel is " 
+var MSG_BEST_CHANNEL_POST="channel"
+var MSG_KEY_LENGTH_DESC="Key length = "
 
 // config_wizard
 var MSG_BLANK_ACCOUNT="사용자 계정을 입력해야 합니다."
