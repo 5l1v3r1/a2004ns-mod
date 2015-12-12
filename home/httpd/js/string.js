@@ -71,136 +71,136 @@ var QOS_SHARING_BOUNDED=2;
 var QOS_SHARING_BORROW=3;
 
 
-var MSG_RESTART_CONFIRM_DEFAULT='°øÀ¯±â ¼³Á¤À» ÃÊ±âÈ­ÇÏ¸é, °øÀ¯±â¸¦ Àç½ÃÀÛ ÇÏ¿©¾ßÇÕ´Ï´Ù.\n°è¼ÓÇÏ½Ã°Ú½À´Ï±î?';
-var MSG_RESTART_CONFIRM_UPNP='UPNP¼³Á¤À» º¯°æÇÏ¸é, °øÀ¯±â¸¦ Àç½ÃÀÛ ÇÏ¿©¾ßÇÕ´Ï´Ù.\n°è¼ÓÇÏ½Ã°Ú½À´Ï±î?';
-var MSG_RESTART_CONFIRM_REBOOT='°øÀ¯±â°¡ Àç½ÃÀÛµË´Ï´Ù. °è¼ÓÇÏ½Ã°Ú½À´Ï±î?';
-var MSG_RESTART_CONFIRM_CHANGE_LANIP='³»ºÎ IPÁÖ¼Ò ¿Í DHCP¼­¹öÀÇ µ¿Àû IP ÁÖ¼Ò¹üÀ§¸¦ º¯°æ ÈÄ,  °øÀ¯±â°¡ Àç½ÃÀÛ µË´Ï´Ù.\n°è¼ÓÇÏ½Ã°Ú½À´Ï±î?';
-var MSG_RESTART_CONFIRM_CHANGE_LANIP_FAKE_TWINIP='TwinIP°¡ ¼³Á¤µÈ °æ¿ì¿¡´Â TwinIP ¼³Á¤ÀÌ ÇØÁöµÇ°í\n³»ºÎ IPÁÖ¼Ò ¿Í DHCP¼­¹öÀÇ µ¿Àû IP ÁÖ¼Ò¹üÀ§¸¦ º¯°æ ÈÄ, °øÀ¯±â°¡ Àç½ÃÀÛ µË´Ï´Ù.\n°è¼ÓÇÏ½Ã°Ú½À´Ï±î?';
-var MSG_RESTART_CONFIRM_RESTORE='¼³Á¤ÀÌ º¹±¸µÈ ÈÄ °øÀ¯±â°¡ Àç½ÃÀÛµË´Ï´Ù.\n °è¼ÓÇÏ½Ã°Ú½À´Ï±î?';
-var MSG_RESTART_CONFIRM_NAT='ÀÎÅÍ³Ý °øÀ¯±â´É ¼³Á¤À» º¯°æÇÏ¸é, °øÀ¯±â¸¦ Àç½ÃÀÛ ÇÏ¿©¾ßÇÕ´Ï´Ù.\n°è¼ÓÇÏ½Ã°Ú½À´Ï±î?';
-var MSG_RESTART_CONFIRM_WIRELESS='¹«¼± µ¿ÀÛ ¸ðµå º¯°æ½Ã¿¡´Â, °øÀ¯±â¸¦ Àç½ÃÀÛ ÇÏ¿©¾ßÇÕ´Ï´Ù.\n°è¼ÓÇÏ½Ã°Ú½À´Ï±î?';
-var MSG_KAID_MODE_CHANGE_WARNING='Ä«ÀÌ µ¿ÀÛ ¸ðµå º¯°æ½Ã¿¡´Â, °øÀ¯±â¸¦ Àç½ÃÀÛ ÇÏ¿©¾ßÇÕ´Ï´Ù.\n°è¼ÓÇÏ½Ã°Ú½À´Ï±î?';
-var MSG_RESTART_CONFIRM_WIRELESS_CBRIDGE='·£Ä«µå ¸ðµå¿¡¼­´Â AP¸ðµå¿¡¼­ÀÇ ¹«¼± Á¢¼Ó ±â´ÉÀ» »ç¿ëÇÒ ¼ö ¾ø½À´Ï´Ù.\n¸ðµå º¯°æÀ» À§ÇØ¼­´Â À¯¹«¼±°øÀ¯±â ¶Ç´Â AP°¡ Àç½ÃÀÛµË´Ï´Ù.\n°è¼ÓÇÏ½Ã°Ú½À´Ï±î?';
-var MSG_RESTART_CONFIRM_WIRELESS_WWAN='¹«¼± WAN¸ðµå´Â ±¤·£,FTTH,ADSL,VDSL,ÄÉÀÌºí¸ðµ©µîÀÇ ´ëºÎºÐ ÀÎÅÍ³Ý ¹æ½Ä¿¡¼­´Â »ç¿ëÇÒ ¼ö ¾ø½À´Ï´Ù.\n¸ðµå º¯°æÀ» À§ÇØ¼­´Â À¯¹«¼±°øÀ¯±â ¶Ç´Â AP°¡ Àç½ÃÀÛµË´Ï´Ù.\n°è¼ÓÇÏ½Ã°Ú½À´Ï±î?';
-var MSG_TWINIP_CONFIRM_WARNING='Twin IP ¼³Á¤/ÇØÁ¦ ½Ã¿¡´Â, °øÀ¯±â¸¦ Àç½ÃÀÛ ÇÏ¿©¾ßÇÕ´Ï´Ù.\n°è¼ÓÇÏ½Ã°Ú½À´Ï±î?';
-var MSG_WAN_FOR_LAN_WARNING='WANÆ÷Æ®ÀÇ ±â´ÉÀ» º¯°æÇÏ±â À§ÇØ¼­´Â °øÀ¯±â¸¦ Àç½ÃÀÛ ÇÏ¿©¾ßÇÕ´Ï´Ù.\n°è¼ÓÇÏ½Ã°Ú½À´Ï±î?';
+var MSG_RESTART_CONFIRM_DEFAULT='System will restart for factory default.\nAre you sure to continue ?';
+var MSG_RESTART_CONFIRM_UPNP='System will restart to change UPNP configuration.\nAre you sure to continue ? ';
+var MSG_RESTART_CONFIRM_REBOOT='System will restart.\nAre you sure to continue?';
+var MSG_RESTART_CONFIRM_CHANGE_LANIP='System will restart to change LAN IP address.\nAre you sure to continue ?';
+var MSG_RESTART_CONFIRM_CHANGE_LANIP_FAKE_TWINIP='System will restart to change LAN IP address.\nAre you sure to continue ?';
+var MSG_RESTART_CONFIRM_RESTORE='System will restart to recover the configuration\n Are you sure to continue ?';
+var MSG_RESTART_CONFIRM_NAT='System will restart to change NAT configuration.\nAre you sure to continue ?';
+var MSG_RESTART_CONFIRM_WIRELESS='System will restart to change wireless mode.\nAre you sure to continue ?';
+var MSG_KAID_MODE_CHANGE_WARNING='System will restart to change KAI mode.\nAre you sure to continue ?';
+var MSG_RESTART_CONFIRM_WIRELESS_CBRIDGE='System will restart to change wireless mode.\nAre you sure to continue?';
+var MSG_RESTART_CONFIRM_WIRELESS_WWAN='System will restart to change wireless mode.\nAre you sure to continue?';
+var MSG_TWINIP_CONFIRM_WARNING='System will restart to apply Twin IP configuration.\nAre you sure to continue ? ';
+var MSG_WAN_FOR_LAN_WARNING='System will restart to change WAN port function\nContinue?';
 
 // common
-var MODIFY_OP='¼öÁ¤'
-var MSG_INVALID_HWADDR="MAC ÁÖ¼Ò°¡ Àß¸øµÇ¾ú½À´Ï´Ù." 
-var MSG_DELETE_RULE_CONFIRM="±ÔÄ¢À» »èÁ¦ÇÏ½Ã°Ú½À´Ï±î?" 
-var MSG_SELECT_RULE_TO_DEL="»èÁ¦ÇÒ ±ÔÄ¢À» ¼±ÅÃÇØ¾ß ÇÕ´Ï´Ù." 
-var MSG_ALL_STOP_RULE="¸ðµç µ¿ÀÛÀ» ¸ØÃß½Ã°Ú½À´Ï±î?"
+var MODIFY_OP='ìˆ˜ì •'
+var MSG_INVALID_HWADDR="MAC ì£¼ì†Œê°€ ìž˜ëª»ë˜ì—ˆìŠµë‹ˆë‹¤." 
+var MSG_DELETE_RULE_CONFIRM="ê·œì¹™ì„ ì‚­ì œí•˜ì‹œê² ìŠµë‹ˆê¹Œ?" 
+var MSG_SELECT_RULE_TO_DEL="ì‚­ì œí•  ê·œì¹™ì„ ì„ íƒí•´ì•¼ í•©ë‹ˆë‹¤." 
+var MSG_ALL_STOP_RULE="ëª¨ë“  ë™ìž‘ì„ ë©ˆì¶”ì‹œê² ìŠµë‹ˆê¹Œ?"
 
-var MSG_HWADDR_NO_INPUT="MAC ÁÖ¼Ò¸¦ ÀÔ·ÂÇÏ¼Å¾ß ÇÕ´Ï´Ù."
-var MSG_SELECT_MAC_REMOVED="»èÁ¦ÇÒ MACÁÖ¼Ò¸¦ ¼±ÅÃÇØ ÁÖ½Ê½Ã¿À."
+var MSG_HWADDR_NO_INPUT="MAC ì£¼ì†Œë¥¼ ìž…ë ¥í•˜ì…”ì•¼ í•©ë‹ˆë‹¤."
+var MSG_SELECT_MAC_REMOVED="ì‚­ì œí•  MACì£¼ì†Œë¥¼ ì„ íƒí•´ ì£¼ì‹­ì‹œì˜¤."
 
-var MSG_OPENER_PAGE_MOVED="¼³Á¤ ÆäÀÌÁö°¡ ÀÌµ¿µÇ¾ú½À´Ï´Ù."
-var MSG_INVALID_VALUE="ÀÔ·Â°ªÀÌ Àß¸ø µÇ¾ú½À´Ï´Ù."
+var MSG_OPENER_PAGE_MOVED="ì„¤ì • íŽ˜ì´ì§€ê°€ ì´ë™ë˜ì—ˆìŠµë‹ˆë‹¤."
+var MSG_INVALID_VALUE="ìž…ë ¥ê°’ì´ ìž˜ëª» ë˜ì—ˆìŠµë‹ˆë‹¤."
 
 
 // wireless_config_wizard
-var MSG_INVALID_WEP_KEY_HEXVALUE2="±ÛÀÚ ÀÔ·Â½Ã¿¡´Â 16Áø¼ö°ªÀ» ÀÔ·ÂÇÏ¿©¾ß ÇÕ´Ï´Ù."
-var MSG_INVALID_WPAPSK_KEY_MISMATCH="µÎ°³ÀÇ ³×Æ®¿öÅ© ¾ÏÈ£°¡ ÀÏÄ¡ÇÏÁö ¾Ê½À´Ï´Ù.\n°°Àº ¾ÏÈ£¸¦ µÎ¹ø ÀÔ·ÂÇØ¾ß ÇÕ´Ï´Ù."
+var MSG_INVALID_WEP_KEY_HEXVALUE2="ê¸€ìž ìž…ë ¥ì‹œì—ëŠ” 16ì§„ìˆ˜ê°’ì„ ìž…ë ¥í•˜ì—¬ì•¼ í•©ë‹ˆë‹¤."
+var MSG_INVALID_WPAPSK_KEY_MISMATCH="ë‘ê°œì˜ ë„¤íŠ¸ì›Œí¬ ì•”í˜¸ê°€ ì¼ì¹˜í•˜ì§€ ì•ŠìŠµë‹ˆë‹¤.\nê°™ì€ ì•”í˜¸ë¥¼ ë‘ë²ˆ ìž…ë ¥í•´ì•¼ í•©ë‹ˆë‹¤."
 
 // sysconf_configmgmt
-var MSG_RESTOREFILE_BLANK="º¹±¸ÇÒ ¼³Á¤ÆÄÀÏÀ» ¼±ÅÃÇÏ½Ê½Ã¿À."
+var MSG_RESTOREFILE_BLANK="ë³µêµ¬í•  ì„¤ì •íŒŒì¼ì„ ì„ íƒí•˜ì‹­ì‹œì˜¤."
 
 //natrouterconf
-var MSG_RULE_NAME_IS_BLANK="±ÔÄ¢ÀÌ¸§ÀÌ ¾ø½À´Ï´Ù!"
+var MSG_RULE_NAME_IS_BLANK="ê·œì¹™ì´ë¦„ì´ ì—†ìŠµë‹ˆë‹¤!"
 
 
 // wirelessconf_wdssetup
-var MSG_WDS_DEL_WARNING="WDS ¼³Á¤À» »èÁ¦ÇÏ½Ã°Ú½À´Ï±î?" 
-var MSG_APADD_REQUEST_APPLY="'Ãß°¡' ¹öÆ°À» Å¬¸¯ÇÏ¸é, WDS¼³Á¤ÀÌ ¿Ï·áµË´Ï´Ù."   
+var MSG_WDS_DEL_WARNING="WDS ì„¤ì •ì„ ì‚­ì œí•˜ì‹œê² ìŠµë‹ˆê¹Œ?" 
+var MSG_APADD_REQUEST_APPLY="'ì¶”ê°€' ë²„íŠ¼ì„ í´ë¦­í•˜ë©´, WDSì„¤ì •ì´ ì™„ë£Œë©ë‹ˆë‹¤."   
 
 // wirelessconf_basicsetup
-var MSG_BLANK_SSID="³×Å©¿öÅ©ÀÌ¸§(SSID)À» ÀÔ·ÂÇØ¾ß ÇÕ´Ï´Ù."
-var MSG_INVALID_WEP_KEY_LENGTH="³×Æ®¿öÅ© ¾ÏÈ£ÀÇ ±æÀÌ°¡ Àß¸øµÇ¾ú½À´Ï´Ù."
-var MSG_INVALID_WEP_KEY_HEXVALUE="³×Æ®¿öÅ© ¾ÏÈ£ °ª¿¡ 16Áø¼ö°ªÀ» ÀÔ·ÂÇÏ¿©¾ß ÇÕ´Ï´Ù."
-var MSG_INVALID_WPAPSK_KEY_LENGTH="³×Æ®¿öÅ© ¾ÏÈ£¸¦ 8±ÛÀÚÀÌ»ó ÀÔ·ÂÇÏ½Ê½Ã¿À."
-var MSG_INVALID_5_KEY_LENGTH="Á¤È®È÷ 5±ÛÀÚÀÇ ¾ÏÈ£¸¦ ÀÔ·ÂÇÏ½Ê½Ã¿À."
-var MSG_INVALID_13_KEY_LENGTH="Á¤È®È÷ 13±ÛÀÚÀÇ ¾ÏÈ£¸¦ ÀÔ·ÂÇÏ½Ê½Ã¿À."
-var SAVE_CONFIGURATION_STRING="¼³Á¤À» ÀúÀåÇÏ½Ã°Ú½À´Ï±î?"
+var MSG_BLANK_SSID="ë„¤í¬ì›Œí¬ì´ë¦„(SSID)ì„ ìž…ë ¥í•´ì•¼ í•©ë‹ˆë‹¤."
+var MSG_INVALID_WEP_KEY_LENGTH="ë„¤íŠ¸ì›Œí¬ ì•”í˜¸ì˜ ê¸¸ì´ê°€ ìž˜ëª»ë˜ì—ˆìŠµë‹ˆë‹¤."
+var MSG_INVALID_WEP_KEY_HEXVALUE="ë„¤íŠ¸ì›Œí¬ ì•”í˜¸ ê°’ì— 16ì§„ìˆ˜ê°’ì„ ìž…ë ¥í•˜ì—¬ì•¼ í•©ë‹ˆë‹¤."
+var MSG_INVALID_WPAPSK_KEY_LENGTH="ë„¤íŠ¸ì›Œí¬ ì•”í˜¸ë¥¼ 8ê¸€ìžì´ìƒ ìž…ë ¥í•˜ì‹­ì‹œì˜¤."
+var MSG_INVALID_5_KEY_LENGTH="ì •í™•ížˆ 5ê¸€ìžì˜ ì•”í˜¸ë¥¼ ìž…ë ¥í•˜ì‹­ì‹œì˜¤."
+var MSG_INVALID_13_KEY_LENGTH="ì •í™•ížˆ 13ê¸€ìžì˜ ì•”í˜¸ë¥¼ ìž…ë ¥í•˜ì‹­ì‹œì˜¤."
+var SAVE_CONFIGURATION_STRING="ì„¤ì •ì„ ì €ìž¥í•˜ì‹œê² ìŠµë‹ˆê¹Œ?"
 
-var MSG_BLANK_REQUEST_SSID="³×Å©¿öÅ©ÀÌ¸§(SSID)À» ÀÔ·ÂÇÑ ÈÄ 'Àû¿ë' ¹öÆ°À» Å¬¸¯ÇÕ´Ï´Ù."
-var MSG_INVALID_REQUEST_KEY="³×Æ®¿öÅ© ¾ÏÈ£¸¦ ÀÔ·ÂÇÑ ÈÄ 'Àû¿ë' ¹öÆ°À» Å¬¸¯ÇÕ´Ï´Ù."
-var MSG_INVALID_REQUEST_APPLY="'Àû¿ë' ¹öÆ°À» Å¬¸¯ÇÏ¸é, ¼±ÅÃµÈ AP·Î Á¢¼ÓµË´Ï´Ù."
-var MSG_APPLY_REQUEST_KEY="'Àû¿ë' ¹öÆ°À» Å¬¸¯ÇÏ¸é ¼±ÅÃÇÑ Ã¤³ÎÀÌ Àû¿ëµË´Ï´Ù."
-var MSG_BEST_CHANNEL_PRE="°Ë»öµÈ ÃÖÀûÀÇ Ã¤³ÎÀº " 
-var MSG_BEST_CHANNEL_POST="¹ø ÀÔ´Ï´Ù."
-var MSG_KEY_LENGTH_DESC="¾ÏÈ£ ±æÀÌ = "
+var MSG_BLANK_REQUEST_SSID="ë„¤í¬ì›Œí¬ì´ë¦„(SSID)ì„ ìž…ë ¥í•œ í›„ 'ì ìš©' ë²„íŠ¼ì„ í´ë¦­í•©ë‹ˆë‹¤."
+var MSG_INVALID_REQUEST_KEY="ë„¤íŠ¸ì›Œí¬ ì•”í˜¸ë¥¼ ìž…ë ¥í•œ í›„ 'ì ìš©' ë²„íŠ¼ì„ í´ë¦­í•©ë‹ˆë‹¤."
+var MSG_INVALID_REQUEST_APPLY="'ì ìš©' ë²„íŠ¼ì„ í´ë¦­í•˜ë©´, ì„ íƒëœ APë¡œ ì ‘ì†ë©ë‹ˆë‹¤."
+var MSG_APPLY_REQUEST_KEY="'ì ìš©' ë²„íŠ¼ì„ í´ë¦­í•˜ë©´ ì„ íƒí•œ ì±„ë„ì´ ì ìš©ë©ë‹ˆë‹¤."
+var MSG_BEST_CHANNEL_PRE="ê²€ìƒ‰ëœ ìµœì ì˜ ì±„ë„ì€ " 
+var MSG_BEST_CHANNEL_POST="ë²ˆ ìž…ë‹ˆë‹¤."
+var MSG_KEY_LENGTH_DESC="ì•”í˜¸ ê¸¸ì´ = "
 
 // config_wizard
-var MSG_BLANK_ACCOUNT="»ç¿ëÀÚ °èÁ¤À» ÀÔ·ÂÇØ¾ß ÇÕ´Ï´Ù."
-var MSG_BLANK_PASSWORD="»ç¿ëÀÚ ¾ÏÈ£¸¦ ÀÔ·ÂÇØ¾ß ÇÕ´Ï´Ù."
+var MSG_BLANK_ACCOUNT="ì‚¬ìš©ìž ê³„ì •ì„ ìž…ë ¥í•´ì•¼ í•©ë‹ˆë‹¤."
+var MSG_BLANK_PASSWORD="ì‚¬ìš©ìž ì•”í˜¸ë¥¼ ìž…ë ¥í•´ì•¼ í•©ë‹ˆë‹¤."
 
-var MSG_INVALID_IP="IPÁÖ¼Ò°¡ Àß¸øµÇ¾ú½À´Ï´Ù."
-var MSG_INVALID_NETMASK="¼­ºê³Ý ¸¶½ºÅ©°¡ Àß¸øµÇ¾ú½À´Ï´Ù."
-var MSG_INVALID_GATEWAY="±âº» °ÔÀÌÆ®¿þÀÌ°¡ Àß¸øµÇ¾ú½À´Ï´Ù."
-var MSG_INVALID_FDNS="±âº» DNS¼­¹öÁÖ¼Ò°¡ Àß¸øµÇ¾ú½À´Ï´Ù"
-var MSG_INVALID_SDNS="º¸Á¶ DNS¼­¹öÁÖ¼Ò°¡ Àß¸øµÇ¾ú½À´Ï´Ù"
+var MSG_INVALID_IP="IPì£¼ì†Œê°€ ìž˜ëª»ë˜ì—ˆìŠµë‹ˆë‹¤."
+var MSG_INVALID_NETMASK="ì„œë¸Œë„· ë§ˆìŠ¤í¬ê°€ ìž˜ëª»ë˜ì—ˆìŠµë‹ˆë‹¤."
+var MSG_INVALID_GATEWAY="ê¸°ë³¸ ê²Œì´íŠ¸ì›¨ì´ê°€ ìž˜ëª»ë˜ì—ˆìŠµë‹ˆë‹¤."
+var MSG_INVALID_FDNS="ê¸°ë³¸ DNSì„œë²„ì£¼ì†Œê°€ ìž˜ëª»ë˜ì—ˆìŠµë‹ˆë‹¤"
+var MSG_INVALID_SDNS="ë³´ì¡° DNSì„œë²„ì£¼ì†Œê°€ ìž˜ëª»ë˜ì—ˆìŠµë‹ˆë‹¤"
 
 
 //netconf_lansetup
-var NETCONF_INTERNAL_INVALID_NETWORK="IP ÁÖ¼Ò°¡ ¿ÜºÎ ³×Æ®¿öÅ©¿Í °°½À´Ï´Ù."
-var STATIC_LEASE_ALREADY_EXIST_IPADDRESS="ÀÌ¹Ì µî·ÏµÈ IPÁÖ¼Ò ÀÔ´Ï´Ù."
-var STATIC_LEASE_ALREADY_EXIST_HWADDRESS="ÀÌ¹Ì µî·ÏµÈ MACÁÖ¼Ò ÀÔ´Ï´Ù."
+var NETCONF_INTERNAL_INVALID_NETWORK="IP ì£¼ì†Œê°€ ì™¸ë¶€ ë„¤íŠ¸ì›Œí¬ì™€ ê°™ìŠµë‹ˆë‹¤."
+var STATIC_LEASE_ALREADY_EXIST_IPADDRESS="ì´ë¯¸ ë“±ë¡ëœ IPì£¼ì†Œ ìž…ë‹ˆë‹¤."
+var STATIC_LEASE_ALREADY_EXIST_HWADDRESS="ì´ë¯¸ ë“±ë¡ëœ MACì£¼ì†Œ ìž…ë‹ˆë‹¤."
 
-var NETCONF_INTERNAL_TOO_SMALL_LEASETIME="IP ´ë¿©½Ã°£À» 10ÃÊÀÌ»óÀ¸·Î ¼³Á¤ÇÏ½Ê½Ã¿À."
-var NETCONF_INTERNAL_TOO_BIG_LEASETIME="IP ´ë¿©½Ã°£À» 2147483647ÃÊ ÀÌÇÏ·Î ¼³Á¤ÇÏ½Ê½Ã¿À." 
-var NETCONF_INTERNAL_INVALID_LEASETIME="IP ´ë¿©½Ã°£À» ¼ýÀÚ·Î ÀÔ·ÂÇØ¾ß ÇÕ´Ï´Ù."
+var NETCONF_INTERNAL_TOO_SMALL_LEASETIME="IP ëŒ€ì—¬ì‹œê°„ì„ 10ì´ˆì´ìƒìœ¼ë¡œ ì„¤ì •í•˜ì‹­ì‹œì˜¤."
+var NETCONF_INTERNAL_TOO_BIG_LEASETIME="IP ëŒ€ì—¬ì‹œê°„ì„ 2147483647ì´ˆ ì´í•˜ë¡œ ì„¤ì •í•˜ì‹­ì‹œì˜¤." 
+var NETCONF_INTERNAL_INVALID_LEASETIME="IP ëŒ€ì—¬ì‹œê°„ì„ ìˆ«ìžë¡œ ìž…ë ¥í•´ì•¼ í•©ë‹ˆë‹¤."
 
 //netconf_wansetup
-var NETCONF_INTERNET_DHCP_MTU_INVALID="MTU °ªÀº 1500À» ÃÊ°úÇÒ¼ö ¾ø½À´Ï´Ù."
-var NETCONF_INTERNET_PPP_MTU_INVALID="MTU °ªÀº 1492À» ÃÊ°úÇÒ¼ö ¾ø½À´Ï´Ù."
-var NETCONF_INTERNET_KEEP_ALIVE_MSG="½Ã°£À» ÀÔ·ÂÇÏ½Ê½Ã¿À"
-var NETCONF_INTERNET_GW_INVALID_NETWORK="°ÔÀÌÆ®¿þÀÌ°¡ ³»ºÎ ³×Æ®¿öÅ©¿Í °°½À´Ï´Ù!"
-var NETCONF_WANSETUP_CONFIRM_WANINFO="ÀÎÅÍ³Ý ¿¬°á Á¤º¸¸¦ È®ÀÎ ÇÏ½Ã°Ú½À´Ï±î?"
+var NETCONF_INTERNET_DHCP_MTU_INVALID="MTU ê°’ì€ 1500ì„ ì´ˆê³¼í• ìˆ˜ ì—†ìŠµë‹ˆë‹¤."
+var NETCONF_INTERNET_PPP_MTU_INVALID="MTU ê°’ì€ 1492ì„ ì´ˆê³¼í• ìˆ˜ ì—†ìŠµë‹ˆë‹¤."
+var NETCONF_INTERNET_KEEP_ALIVE_MSG="ì‹œê°„ì„ ìž…ë ¥í•˜ì‹­ì‹œì˜¤"
+var NETCONF_INTERNET_GW_INVALID_NETWORK="ê²Œì´íŠ¸ì›¨ì´ê°€ ë‚´ë¶€ ë„¤íŠ¸ì›Œí¬ì™€ ê°™ìŠµë‹ˆë‹¤!"
+var NETCONF_WANSETUP_CONFIRM_WANINFO="ì¸í„°ë„· ì—°ê²° ì •ë³´ë¥¼ í™•ì¸ í•˜ì‹œê² ìŠµë‹ˆê¹Œ?"
 
 
 //netconf_lansetup
-var NETCONF_INTERNAL_INVALID_DHCP_S_ADDR="µ¿Àû IP ÁÖ¼Ò ÇÒ´ç ¹üÀ§°¡ Àß¸øµÇ¾ú½À´Ï´Ù!"
-var NETCONF_INTERNAL_INVALID_DHCP_E_ADDR="µ¿Àû IP ÁÖ¼Ò ÇÒ´ç ¹üÀ§°¡ Àß¸øµÇ¾ú½À´Ï´Ù!"
-var NETCONF_INTERNAL_INVALID_DHCP_ADDR="µ¿Àû IP ÁÖ¼Ò ÇÒ´ç ¹üÀ§°¡ Àß¸øµÇ¾ú½À´Ï´Ù!"
-var NETCONF_INTERNAL_DELETE_IP="ÁöÁ¤µÈ IPÁÖ¼Ò¸¦ »èÁ¦ÇÏ½Ã°Ú½À´Ï±î?"
+var NETCONF_INTERNAL_INVALID_DHCP_S_ADDR="ë™ì  IP ì£¼ì†Œ í• ë‹¹ ë²”ìœ„ê°€ ìž˜ëª»ë˜ì—ˆìŠµë‹ˆë‹¤!"
+var NETCONF_INTERNAL_INVALID_DHCP_E_ADDR="ë™ì  IP ì£¼ì†Œ í• ë‹¹ ë²”ìœ„ê°€ ìž˜ëª»ë˜ì—ˆìŠµë‹ˆë‹¤!"
+var NETCONF_INTERNAL_INVALID_DHCP_ADDR="ë™ì  IP ì£¼ì†Œ í• ë‹¹ ë²”ìœ„ê°€ ìž˜ëª»ë˜ì—ˆìŠµë‹ˆë‹¤!"
+var NETCONF_INTERNAL_DELETE_IP="ì§€ì •ëœ IPì£¼ì†Œë¥¼ ì‚­ì œí•˜ì‹œê² ìŠµë‹ˆê¹Œ?"
 
 // wirelessconf_advanced
-var DESC_INVALID_TX_POWER="¼Û½Å ÆÄ¿öÀÇ °ªÀº 1 ~ 100 »çÀÌÀÇ °ªÀÌ¾î¾ß ÇÕ´Ï´Ù.";
-var DESC_INVALID_RTS_THRESHOLD="RTS ThresholdÀÇ °ªÀº  1 ~ 2347 »çÀÌÀÇ °ªÀÌ¾î¾ß ÇÕ´Ï´Ù.";
-var DESC_INVALID_FRAG_THRESHOLD="Fragmentation ThresholdÀÇ °ªÀº  256 ~ 2346 »çÀÌÀÇ °ªÀÌ¾î¾ß ÇÕ´Ï´Ù.";
-var DESC_INVALID_BEACON_INTERVAL="Beacon ÁÖ±âÀÇ °ªÀº  50 ~ 1024 »çÀÌÀÇ °ªÀÌ¾î¾ß ÇÕ´Ï´Ù.";
-var DESC_INVALID_BEACON_INTERVAL="Beacon ÁÖ±âÀÇ °ªÀº  50 ~ 1024 »çÀÌÀÇ °ªÀÌ¾î¾ß ÇÕ´Ï´Ù.";
+var DESC_INVALID_TX_POWER="ì†¡ì‹  íŒŒì›Œì˜ ê°’ì€ 1 ~ 100 ì‚¬ì´ì˜ ê°’ì´ì–´ì•¼ í•©ë‹ˆë‹¤.";
+var DESC_INVALID_RTS_THRESHOLD="RTS Thresholdì˜ ê°’ì€  1 ~ 2347 ì‚¬ì´ì˜ ê°’ì´ì–´ì•¼ í•©ë‹ˆë‹¤.";
+var DESC_INVALID_FRAG_THRESHOLD="Fragmentation Thresholdì˜ ê°’ì€  256 ~ 2346 ì‚¬ì´ì˜ ê°’ì´ì–´ì•¼ í•©ë‹ˆë‹¤.";
+var DESC_INVALID_BEACON_INTERVAL="Beacon ì£¼ê¸°ì˜ ê°’ì€  50 ~ 1024 ì‚¬ì´ì˜ ê°’ì´ì–´ì•¼ í•©ë‹ˆë‹¤.";
+var DESC_INVALID_BEACON_INTERVAL="Beacon ì£¼ê¸°ì˜ ê°’ì€  50 ~ 1024 ì‚¬ì´ì˜ ê°’ì´ì–´ì•¼ í•©ë‹ˆë‹¤.";
 
 // expertconf_kai
-var KAID_MODE_CHANGE_WARNING="½Ã½ºÅÛÀÌ Àç½ÃÀÛµË´Ï´Ù. °è¼ÓÇÏ½Ã°Ú½À´Ï±î?"
-var KAID_MUST_SELECT_OBT_SERVER="Ä«ÀÌ¼­¹ö¸¦ ¼±ÅÃÇØ¾ß ÇÕ´Ï´Ù."
-var KAID_RESTART_KAI_UI="Ä«ÀÌ UI¸¦ ´Ù½Ã ½ÇÇà ÇØ¾ßÇÕ´Ï´Ù."
+var KAID_MODE_CHANGE_WARNING="ì‹œìŠ¤í…œì´ ìž¬ì‹œìž‘ë©ë‹ˆë‹¤. ê³„ì†í•˜ì‹œê² ìŠµë‹ˆê¹Œ?"
+var KAID_MUST_SELECT_OBT_SERVER="ì¹´ì´ì„œë²„ë¥¼ ì„ íƒí•´ì•¼ í•©ë‹ˆë‹¤."
+var KAID_RESTART_KAI_UI="ì¹´ì´ UIë¥¼ ë‹¤ì‹œ ì‹¤í–‰ í•´ì•¼í•©ë‹ˆë‹¤."
 
 //natrouterconf_portforward
 var MAX_PORT_FORWARD=60
-var NATCONF_PORTFORWARD_NO_MORE_RULE="´õÀÌ»ó Æ÷Æ® Æ÷¿öµå ¼³Á¤À» Ãß°¡ÇÒ ¼ö ¾ø½À´Ï´Ù!"
-var NATCONF_PORTFORWARD_INVALID_INT_IP_ADDRESS="³»ºÎ IP ÁÖ¼Ò°¡ Àß¸øµÇ¾ú½À´Ï´Ù!"
-var NATCONF_PORTFORWARD_EXT_PORT_IS_BLANK="¿ÜºÎ »ç¿ë Æ÷Æ®°¡ ÁöÁ¤µÇÁö ¾Ê¾Ò½À´Ï´Ù!"
-var NATCONF_PORTFORWARD_INVALID_EXT_PORT="¿ÜºÎ »ç¿ë Æ÷Æ®°¡ Àß¸øµÇ¾ú½À´Ï´Ù!"
-var NATCONF_PORTFORWARD_INVALID_EXT_PORT_RANGE="¿ÜºÎ »ç¿ë Æ÷Æ® ¹üÀ§°¡ Àß¸øµÇ¾ú½À´Ï´Ù!"
-var NATCONF_PORTFORWARD_INVALID_INT_PORT="³»ºÎ »ç¿ë Æ÷Æ®°¡ Àß¸øµÇ¾ú½À´Ï´Ù!"
-var NATCONF_PORTFORWARD_INVALID_INT_PORT_RANGE="³»ºÎ »ç¿ë Æ÷Æ® ¹üÀ§°¡ Àß¸øµÇ¾ú½À´Ï´Ù!"
-var NATCONF_PORTFORWARD_RUN_RULE="±ÔÄ¢À» µ¿ÀÛÇÏ½Ã°Ú½À´Ï±î?"
+var NATCONF_PORTFORWARD_NO_MORE_RULE="ë”ì´ìƒ í¬íŠ¸ í¬ì›Œë“œ ì„¤ì •ì„ ì¶”ê°€í•  ìˆ˜ ì—†ìŠµë‹ˆë‹¤!"
+var NATCONF_PORTFORWARD_INVALID_INT_IP_ADDRESS="ë‚´ë¶€ IP ì£¼ì†Œê°€ ìž˜ëª»ë˜ì—ˆìŠµë‹ˆë‹¤!"
+var NATCONF_PORTFORWARD_EXT_PORT_IS_BLANK="ì™¸ë¶€ ì‚¬ìš© í¬íŠ¸ê°€ ì§€ì •ë˜ì§€ ì•Šì•˜ìŠµë‹ˆë‹¤!"
+var NATCONF_PORTFORWARD_INVALID_EXT_PORT="ì™¸ë¶€ ì‚¬ìš© í¬íŠ¸ê°€ ìž˜ëª»ë˜ì—ˆìŠµë‹ˆë‹¤!"
+var NATCONF_PORTFORWARD_INVALID_EXT_PORT_RANGE="ì™¸ë¶€ ì‚¬ìš© í¬íŠ¸ ë²”ìœ„ê°€ ìž˜ëª»ë˜ì—ˆìŠµë‹ˆë‹¤!"
+var NATCONF_PORTFORWARD_INVALID_INT_PORT="ë‚´ë¶€ ì‚¬ìš© í¬íŠ¸ê°€ ìž˜ëª»ë˜ì—ˆìŠµë‹ˆë‹¤!"
+var NATCONF_PORTFORWARD_INVALID_INT_PORT_RANGE="ë‚´ë¶€ ì‚¬ìš© í¬íŠ¸ ë²”ìœ„ê°€ ìž˜ëª»ë˜ì—ˆìŠµë‹ˆë‹¤!"
+var NATCONF_PORTFORWARD_RUN_RULE="ê·œì¹™ì„ ë™ìž‘í•˜ì‹œê² ìŠµë‹ˆê¹Œ?"
 
 
 //natrouterconf_misc
-var NATCONF_INTAPPS_NO_MORE_ADD_FTP_PORT="¼³Á¤ÇÒ ¼ö ÀÖ´Â Æ÷Æ®ÀÇ °¹¼ö¸¦ ÃÊ°úÇß½À´Ï´Ù !"
-var NATCONF_INTAPPS_FTP_PORT_EMPTY="Æ÷Æ®°¡ ÁöÁ¤µÇÁö ¾Ê¾Ò½À´Ï´Ù!"
-var NATCONF_INTAPPS_FTP_PORT_INVALID= "Æ÷Æ®°¡ Àß¸øµÇ¾ú½À´Ï´Ù!"
+var NATCONF_INTAPPS_NO_MORE_ADD_FTP_PORT="ì„¤ì •í•  ìˆ˜ ìžˆëŠ” í¬íŠ¸ì˜ ê°¯ìˆ˜ë¥¼ ì´ˆê³¼í–ˆìŠµë‹ˆë‹¤ !"
+var NATCONF_INTAPPS_FTP_PORT_EMPTY="í¬íŠ¸ê°€ ì§€ì •ë˜ì§€ ì•Šì•˜ìŠµë‹ˆë‹¤!"
+var NATCONF_INTAPPS_FTP_PORT_INVALID= "í¬íŠ¸ê°€ ìž˜ëª»ë˜ì—ˆìŠµë‹ˆë‹¤!"
 
 //natrouterconf_router
-var NETCONF_ROUTE_ENTRY_DELETE="¼±ÅÃµÈ ¶ó¿ìÆÃ Å×ÀÌºíÀ» »èÁ¦ÇÏ½Ã°Ú½À´Ï±î?"
-var NETCONF_ROUTE_ENTRY_SELECT="»èÁ¦ÇÒ ¶ó¿ìÆÃÅ×ÀÌºíÀ» ¼±ÅÃÇØ ÁÖ½Ê½Ã¿À!"
+var NETCONF_ROUTE_ENTRY_DELETE="ì„ íƒëœ ë¼ìš°íŒ… í…Œì´ë¸”ì„ ì‚­ì œí•˜ì‹œê² ìŠµë‹ˆê¹Œ?"
+var NETCONF_ROUTE_ENTRY_SELECT="ì‚­ì œí•  ë¼ìš°íŒ…í…Œì´ë¸”ì„ ì„ íƒí•´ ì£¼ì‹­ì‹œì˜¤!"
 
 //natrouterconf_twinzipdmz
-var NATCONF_TWINIPDMZ_UPDATE_TIME="IP °»½Å ½Ã°£Àº 60ÃÊ ÀÌ»óÀÌ¾î¾ß ÇÕ´Ï´Ù."
-var NATCONF_TWINIPDMZ_WARNING="ÇöÀç Á¢¼ÓÇÑ PC´Â Twin IP¸¦ »ç¿ëÇÏ°í ÀÖ½À´Ï´Ù. Twin IP¸¦ ÇØÁ¦ ÇÏ½Ã¸é ÇØ´ç PC´Â IP ÁÖ¼Ò¸¦ Àç¼³Á¤ ÇØ¾ß Á¤»óÀûÀ¸·Î »ç¿ëÇÒ ¼ö ÀÖ½À´Ï´Ù.  (¼³Á¤ ÇØÁ¦ Á÷ ÈÄ ºÎÅÍ´Â ipTIME À¥ ¼³Á¤ ÆäÀÌÁö Á¢¼ÓÀ» Æ÷ÇÔÇÑ ¸ðµç Åë½ÅÀÌ ÀÌ·ç¾î ÁöÁö ¾Ê½À´Ï´Ù.)  °è¼Ó ÁøÇà ÇÏ½Ã°Ú½À´Ï±î ?"
+var NATCONF_TWINIPDMZ_UPDATE_TIME="IP ê°±ì‹  ì‹œê°„ì€ 60ì´ˆ ì´ìƒì´ì–´ì•¼ í•©ë‹ˆë‹¤."
+var NATCONF_TWINIPDMZ_WARNING="í˜„ìž¬ ì ‘ì†í•œ PCëŠ” Twin IPë¥¼ ì‚¬ìš©í•˜ê³  ìžˆìŠµë‹ˆë‹¤. Twin IPë¥¼ í•´ì œ í•˜ì‹œë©´ í•´ë‹¹ PCëŠ” IP ì£¼ì†Œë¥¼ ìž¬ì„¤ì • í•´ì•¼ ì •ìƒì ìœ¼ë¡œ ì‚¬ìš©í•  ìˆ˜ ìžˆìŠµë‹ˆë‹¤.  (ì„¤ì • í•´ì œ ì§ í›„ ë¶€í„°ëŠ” ipTIME ì›¹ ì„¤ì • íŽ˜ì´ì§€ ì ‘ì†ì„ í¬í•¨í•œ ëª¨ë“  í†µì‹ ì´ ì´ë£¨ì–´ ì§€ì§€ ì•ŠìŠµë‹ˆë‹¤.)  ê³„ì† ì§„í–‰ í•˜ì‹œê² ìŠµë‹ˆê¹Œ ?"
 
 
 //firewallconf_firewall
@@ -208,311 +208,311 @@ var USER_FWSCHED_TYPE=1
 var APP_FWSCHED_TYPE=2
 var URL_FWSCHED_TYPE=4
 var MAX_FWSCHED_COUNT=200 
-var FIREWALLCONF_FIREWALL_INVALID_TIME_TO_BLOCK="¼³Á¤ÇÑ ½Ã°£¹üÀ§°¡ Àß¸ø µÇ¾ú½À´Ï´Ù."
-var FIREWALLCONF_FIREWALL_DATE_WARNING="Á¦ÇÑÇÒ ¿äÀÏÀ» ¼±ÅÃÇÏ¼Å¾ß ÇÕ´Ï´Ù"
-var FIREWALLCONF_FIREWALL_INVALID_SOURCE_IP="½ÃÀÛÁö IP ÁÖ¼Ò°¡ Àß¸øµÇ¾ú½À´Ï´Ù!"
-var FIREWALLCONF_FIREWALL_INVALID_SOURCE_HW="½ÃÀÛÁö MAC ÁÖ¼Ò°¡ Àß¸øµÇ¾ú½À´Ï´Ù!"
-var FIREWALLCONF_FIREWALL_INVALID_DEST_IP="¸ñÀûÁö IP ÁÖ¼Ò°¡ Àß¸øµÇ¾ú½À´Ï´Ù!"
-var FIREWALLCONF_FIREWALL_INVALID_DEST_PORT="¸ñÀûÁö Æ÷Æ®°¡ Àß¸øµÇ¾ú½À´Ï´Ù!"
-var FIREWALLCONF_FIREWALL_RUN_RULE="±ÔÄ¢À» µ¿ÀÛÇÏ½Ã°Ú½À´Ï±î?"
-var FIREWALLCONF_FIREWALL_NO_MORE_RULE="´õÀÌ»ó ¼³Á¤À» Ãß°¡ÇÒ ¼ö ¾ø½À´Ï´Ù!"
-var FIREWALLCONF_FIREWALL_INVALID_PRIORITY="¿ì¼±¼øÀ§ °ªÀÌ Àß¸ø µÇ¾ú½À´Ï´Ù."
+var FIREWALLCONF_FIREWALL_INVALID_TIME_TO_BLOCK="ì„¤ì •í•œ ì‹œê°„ë²”ìœ„ê°€ ìž˜ëª» ë˜ì—ˆìŠµë‹ˆë‹¤."
+var FIREWALLCONF_FIREWALL_DATE_WARNING="ì œí•œí•  ìš”ì¼ì„ ì„ íƒí•˜ì…”ì•¼ í•©ë‹ˆë‹¤"
+var FIREWALLCONF_FIREWALL_INVALID_SOURCE_IP="ì‹œìž‘ì§€ IP ì£¼ì†Œê°€ ìž˜ëª»ë˜ì—ˆìŠµë‹ˆë‹¤!"
+var FIREWALLCONF_FIREWALL_INVALID_SOURCE_HW="ì‹œìž‘ì§€ MAC ì£¼ì†Œê°€ ìž˜ëª»ë˜ì—ˆìŠµë‹ˆë‹¤!"
+var FIREWALLCONF_FIREWALL_INVALID_DEST_IP="ëª©ì ì§€ IP ì£¼ì†Œê°€ ìž˜ëª»ë˜ì—ˆìŠµë‹ˆë‹¤!"
+var FIREWALLCONF_FIREWALL_INVALID_DEST_PORT="ëª©ì ì§€ í¬íŠ¸ê°€ ìž˜ëª»ë˜ì—ˆìŠµë‹ˆë‹¤!"
+var FIREWALLCONF_FIREWALL_RUN_RULE="ê·œì¹™ì„ ë™ìž‘í•˜ì‹œê² ìŠµë‹ˆê¹Œ?"
+var FIREWALLCONF_FIREWALL_NO_MORE_RULE="ë”ì´ìƒ ì„¤ì •ì„ ì¶”ê°€í•  ìˆ˜ ì—†ìŠµë‹ˆë‹¤!"
+var FIREWALLCONF_FIREWALL_INVALID_PRIORITY="ìš°ì„ ìˆœìœ„ ê°’ì´ ìž˜ëª» ë˜ì—ˆìŠµë‹ˆë‹¤."
 
 //firewallconf_netdetect
-var NETCONF_NETDETECT_WARNING1="ÃÖ¼Ò ¿¬°á¼ö´Â 10 ÀÔ´Ï´Ù."
-var NETCONF_NETDETECT_WARNING2="À¯È¿ ½Ã°£ ¹üÀ§´Â 0½Ã ~ 23½Ã ÀÔ´Ï´Ù."
+var NETCONF_NETDETECT_WARNING1="ìµœì†Œ ì—°ê²°ìˆ˜ëŠ” 10 ìž…ë‹ˆë‹¤."
+var NETCONF_NETDETECT_WARNING2="ìœ íš¨ ì‹œê°„ ë²”ìœ„ëŠ” 0ì‹œ ~ 23ì‹œ ìž…ë‹ˆë‹¤."
 
 
 //firewallconf_internet
-var FIREWALLCONF_INTERNET_RESTRICTIVE_WARNING="Á¦ÇÑÇÒ PCÀÇ °¹¼ö´Â ÃÖ¼Ò 1°³ ÀÌ»óÀÌ°Å³ª ÃÖ´ë 253°³ ÀÌÇÏÀÔ´Ï´Ù."
-var FIREWALLCONF_INTERNET_RESTRICTIVE_CLEARANCE="µî·ÏµÈ ¸ðµç PCÁ¤º¸¸¦ ÃÊ±âÈ­ ÇÏ½Ã°Ú½À´Ï±î ?"
+var FIREWALLCONF_INTERNET_RESTRICTIVE_WARNING="ì œí•œí•  PCì˜ ê°¯ìˆ˜ëŠ” ìµœì†Œ 1ê°œ ì´ìƒì´ê±°ë‚˜ ìµœëŒ€ 253ê°œ ì´í•˜ìž…ë‹ˆë‹¤."
+var FIREWALLCONF_INTERNET_RESTRICTIVE_CLEARANCE="ë“±ë¡ëœ ëª¨ë“  PCì •ë³´ë¥¼ ì´ˆê¸°í™” í•˜ì‹œê² ìŠµë‹ˆê¹Œ ?"
 
 //firewallconf_etc 
-var DESC_INVALID_ARP_PERIOD="ÃÊ´ç ARP°³¼ö¸¦ 1 ~ 100 »çÀÌÀÇ ¼ö·Î ¼³Á¤ÇÕ´Ï´Ù."
+var DESC_INVALID_ARP_PERIOD="ì´ˆë‹¹ ARPê°œìˆ˜ë¥¼ 1 ~ 100 ì‚¬ì´ì˜ ìˆ˜ë¡œ ì„¤ì •í•©ë‹ˆë‹¤."
 
 //expertconf_ddns
-var EXPERTCONF_DDNS_HOSTNAME_IS_BLANK = "È£½ºÆ® ÀÌ¸§ÀÌ ¾ø½À´Ï´Ù."
-var EXPERTCONF_DDNS_HOSTNAME_NOT_IPTIMEORG = "È£½ºÆ®ÀÌ¸§Àº  iptime.org ·Î ³¡³ª¾ß ÇÕ´Ï´Ù."
-var EXPERTCONF_IPTIMEDNS_NOMORE_WANRING1 ="´õ ÀÌ»ó ipTIME DDNS È£½ºÆ®¸¦ Ãß°¡ÇÒ ¼ö ¾ø½À´Ï´Ù."
-var EXPERTCONF_IPTIMEDDNS_INVALID_USERID= "Á¤È®ÇÑ E-mail ÁÖ¼Ò¸¦ ÀÔ·ÂÇÏ½Ê½Ã¿À."
-var EXPERTCONF_DYNDNS_NOMORE_WANRING1="´õ ÀÌ»ó dyndns.orgÀÇ DDNS È£½ºÆ®¸¦ Ãß°¡ÇÒ ¼ö ¾ø½À´Ï´Ù."
-var INVALID_EMAIL_ADDRESS_STR="E-mail ÁÖ¼ÒÇü½ÄÀÌ Àß¸øµÇ¾ú½À´Ï´Ù."
-var EXPERTCONF_IPTIMEDDNS_INVALID_HOSTNAME = "È£½ºÆ® ÀÌ¸§¿¡ '_' ¶Ç´Â '.'Àº »ç¿ëÇÒ ¼ö ¾ø½À´Ï´Ù."
+var EXPERTCONF_DDNS_HOSTNAME_IS_BLANK = "í˜¸ìŠ¤íŠ¸ ì´ë¦„ì´ ì—†ìŠµë‹ˆë‹¤."
+var EXPERTCONF_DDNS_HOSTNAME_NOT_IPTIMEORG = "í˜¸ìŠ¤íŠ¸ì´ë¦„ì€  iptime.org ë¡œ ëë‚˜ì•¼ í•©ë‹ˆë‹¤."
+var EXPERTCONF_IPTIMEDNS_NOMORE_WANRING1 ="ë” ì´ìƒ ipTIME DDNS í˜¸ìŠ¤íŠ¸ë¥¼ ì¶”ê°€í•  ìˆ˜ ì—†ìŠµë‹ˆë‹¤."
+var EXPERTCONF_IPTIMEDDNS_INVALID_USERID= "ì •í™•í•œ E-mail ì£¼ì†Œë¥¼ ìž…ë ¥í•˜ì‹­ì‹œì˜¤."
+var EXPERTCONF_DYNDNS_NOMORE_WANRING1="ë” ì´ìƒ dyndns.orgì˜ DDNS í˜¸ìŠ¤íŠ¸ë¥¼ ì¶”ê°€í•  ìˆ˜ ì—†ìŠµë‹ˆë‹¤."
+var INVALID_EMAIL_ADDRESS_STR="E-mail ì£¼ì†Œí˜•ì‹ì´ ìž˜ëª»ë˜ì—ˆìŠµë‹ˆë‹¤."
+var EXPERTCONF_IPTIMEDDNS_INVALID_HOSTNAME = "í˜¸ìŠ¤íŠ¸ ì´ë¦„ì— '_' ë˜ëŠ” '.'ì€ ì‚¬ìš©í•  ìˆ˜ ì—†ìŠµë‹ˆë‹¤."
 
 //expertconf_remotepc
-var EXPERTCONF_WOL_PC_NAME_IS_BLANK="PC ¼³¸íÀÌ ºñ¾îÀÖ½À´Ï´Ù!"
-var EXPERTCONF_WOL_DEL_PC="PC¸¦ »èÁ¦ ÇÏ½Ã°Ú½À´Ï±î ?"
-var EXPERTCONF_WOL_WANT_TO_WAKE_UP_PC ="PC ¸¦ ÄÑ½Ã°Ú½À´Ï±î ?"
+var EXPERTCONF_WOL_PC_NAME_IS_BLANK="PC ì„¤ëª…ì´ ë¹„ì–´ìžˆìŠµë‹ˆë‹¤!"
+var EXPERTCONF_WOL_DEL_PC="PCë¥¼ ì‚­ì œ í•˜ì‹œê² ìŠµë‹ˆê¹Œ ?"
+var EXPERTCONF_WOL_WANT_TO_WAKE_UP_PC ="PC ë¥¼ ì¼œì‹œê² ìŠµë‹ˆê¹Œ ?"
 
 //expertconf_hostscan
 var ICMP_PING=0
 var ARP_PING=1
 var PING_SCAN=0
 var TCP_PORT_SCAN=1
-var SYSINFO_HOST_INVALID_TIMEOUT =   "½Ã°£Á¦ÇÑÀ» ÀÔ·ÂÇÏ½Ê½Ã¿À"
-var SYSINFO_HOST_TIMERANGE   =       "½Ã°£Àº 1ÃÊÀÌ»ó ÀÔ·ÂÇØ¾ß ÇÕ´Ï´Ù."
-var SYSINFO_HOST_INVALID_DATASIZE =  "Å©±â¸¦ ÀÔ·ÂÇÏ½Ê½Ã¿À"
-var SYSINFO_HOST_DATARANGE    =      "0~65,500±îÁöÀÇ ¹üÀ§·Î ÀÔ·ÂÇÕ´Ï´Ù."
-var SYSINFO_HOST_INVALID_START  =    "½ÃÀÛ Æ÷Æ®¸¦ ÀÔ·ÂÇÏ½Ê½Ã¿À"
-var SYSINFO_HOST_PORTRANGE      =    "0~65,535±îÁöÀÇ ¹üÀ§·Î ÀÔ·ÂÇÕ´Ï´Ù."
+var SYSINFO_HOST_INVALID_TIMEOUT =   "ì‹œê°„ì œí•œì„ ìž…ë ¥í•˜ì‹­ì‹œì˜¤"
+var SYSINFO_HOST_TIMERANGE   =       "ì‹œê°„ì€ 1ì´ˆì´ìƒ ìž…ë ¥í•´ì•¼ í•©ë‹ˆë‹¤."
+var SYSINFO_HOST_INVALID_DATASIZE =  "í¬ê¸°ë¥¼ ìž…ë ¥í•˜ì‹­ì‹œì˜¤"
+var SYSINFO_HOST_DATARANGE    =      "0~65,500ê¹Œì§€ì˜ ë²”ìœ„ë¡œ ìž…ë ¥í•©ë‹ˆë‹¤."
+var SYSINFO_HOST_INVALID_START  =    "ì‹œìž‘ í¬íŠ¸ë¥¼ ìž…ë ¥í•˜ì‹­ì‹œì˜¤"
+var SYSINFO_HOST_PORTRANGE      =    "0~65,535ê¹Œì§€ì˜ ë²”ìœ„ë¡œ ìž…ë ¥í•©ë‹ˆë‹¤."
 
 //trafficconf_conninfo
-var TRAFFICCONF_CONNINFO_DELETE_CONN="ÁöÁ¤µÈ IPÁÖ¼ÒÀÇ Ä¿³Ø¼ÇÀ» »èÁ¦ÇÏ½Ã°Ú½À´Ï±î?"
+var TRAFFICCONF_CONNINFO_DELETE_CONN="ì§€ì •ëœ IPì£¼ì†Œì˜ ì»¤ë„¥ì…˜ì„ ì‚­ì œí•˜ì‹œê² ìŠµë‹ˆê¹Œ?"
 
 //trafficconf_switch
-var SELECT_VLAN_PORT_WARNING ="VLAN Æ÷Æ®¸¦ ¼±ÅÃÇÏ½Ê½Ã¿À"
-var SELECT_VLAN_PORT_TRUNK_WARNING ="±¸¼ºÇÒ·Á´Â VLAN¿¡ TRUNK(%s)ÀÇ ¸ðµç Æ÷Æ®°¡ Æ÷ÇÔµÇ¾î¾ß ÇÕ´Ï´Ù."
-var SELECT_TRUNK_PORT_WARNING ="TRUNK Æ÷Æ®¸¦ ¼±ÅÃÇÏ½Ê½Ã¿À"
-var SELECT_TRUNK_PORT_VLAN_WARNING ="±¸¼ºÇÒ·Á´Â TRUNKÀÇ ¸ðµç Æ÷Æ®µéÀÌ \nVLAN(%s) ¶Ç´Â ´Ù¸¥ ´ÜÀÏ VLAN¿¡ Æ÷ÇÔµÇ¾î¾ß ÇÕ´Ï´Ù."
-var MAX_MEMBER_TRUNK_WARNING="TRUNK ±¸¼º °¡´ÉÇÑ ÃÖ´ë Æ÷Æ®¼ö´Â %d°³ ÀÔ´Ï´Ù."
-var ALREADY_OTHER_GROUP_MEMBER="´Ù¸¥ ±×·ì¿¡ ÀÌ¹Ì Æ÷ÇÔµÇ¾î ÀÖ´Â Æ÷Æ®°¡ ÀÖ½À´Ï´Ù."
+var SELECT_VLAN_PORT_WARNING ="VLAN í¬íŠ¸ë¥¼ ì„ íƒí•˜ì‹­ì‹œì˜¤"
+var SELECT_VLAN_PORT_TRUNK_WARNING ="êµ¬ì„±í• ë ¤ëŠ” VLANì— TRUNK(%s)ì˜ ëª¨ë“  í¬íŠ¸ê°€ í¬í•¨ë˜ì–´ì•¼ í•©ë‹ˆë‹¤."
+var SELECT_TRUNK_PORT_WARNING ="TRUNK í¬íŠ¸ë¥¼ ì„ íƒí•˜ì‹­ì‹œì˜¤"
+var SELECT_TRUNK_PORT_VLAN_WARNING ="êµ¬ì„±í• ë ¤ëŠ” TRUNKì˜ ëª¨ë“  í¬íŠ¸ë“¤ì´ \nVLAN(%s) ë˜ëŠ” ë‹¤ë¥¸ ë‹¨ì¼ VLANì— í¬í•¨ë˜ì–´ì•¼ í•©ë‹ˆë‹¤."
+var MAX_MEMBER_TRUNK_WARNING="TRUNK êµ¬ì„± ê°€ëŠ¥í•œ ìµœëŒ€ í¬íŠ¸ìˆ˜ëŠ” %dê°œ ìž…ë‹ˆë‹¤."
+var ALREADY_OTHER_GROUP_MEMBER="ë‹¤ë¥¸ ê·¸ë£¹ì— ì´ë¯¸ í¬í•¨ë˜ì–´ ìžˆëŠ” í¬íŠ¸ê°€ ìžˆìŠµë‹ˆë‹¤."
 
 //trafficconf_loadshare
-var NATCONF_PORTFORWARD_NO_MORE_RULE="´õÀÌ»ó Æ÷Æ® Æ÷¿öµå ¼³Á¤À» Ãß°¡ÇÒ ¼ö ¾ø½À´Ï´Ù"
-var NATCONF_PORTFORWARD_RULE_NAME_IS_BLANK="±ÔÄ¢ ÀÌ¸§ÀÌ ¾ø½À´Ï´Ù"
-var NATCONF_INTSERVER_INVALID_EXT_PORT="Æ÷Æ®°¡ Àß¸øµÇ¾ú½À´Ï´Ù"
-var NATCONF_LOADSHARE_KEEP_WRR="ÀÚµ¿ ºÐ»ê ±â´É µ¿ÀÛÁß¿¡´Â 'ÀÚµ¿ ÀÎÅÍ³Ý ¶óÀÎ ¹é¾÷' ±â´ÉÀ» ÁßÁöÇÒ ¼ö ¾ø½À´Ï´Ù." 
-var NATCONF_LOADSHARE_ON_LINE_BACKUP="'ÀÚµ¿ ÀÎÅÍ³Ý ¶óÀÎ ¹é¾÷' ±â´É ¶ÇÇÑ ÀÚµ¿À¸·Î ¼³Á¤µË´Ï´Ù. °è¼Ó ÇÏ½Ã°Ú½À´Ï±î ?"
-var NATCONF_LOADSHARE_DELETE_RULE="±ÔÄ¢À» »èÁ¦ÇÏ½Ã°Ú½À´Ï±î?"
-var NATCONF_PORTFORWARD_SELECT_RULE_TO_DEL="»èÁ¦ÇÒ ±ÔÄ¢À» ¼±ÅÃÇØ¾ß ÇÕ´Ï´Ù." 
+var NATCONF_PORTFORWARD_NO_MORE_RULE="ë”ì´ìƒ í¬íŠ¸ í¬ì›Œë“œ ì„¤ì •ì„ ì¶”ê°€í•  ìˆ˜ ì—†ìŠµë‹ˆë‹¤"
+var NATCONF_PORTFORWARD_RULE_NAME_IS_BLANK="ê·œì¹™ ì´ë¦„ì´ ì—†ìŠµë‹ˆë‹¤"
+var NATCONF_INTSERVER_INVALID_EXT_PORT="í¬íŠ¸ê°€ ìž˜ëª»ë˜ì—ˆìŠµë‹ˆë‹¤"
+var NATCONF_LOADSHARE_KEEP_WRR="ìžë™ ë¶„ì‚° ê¸°ëŠ¥ ë™ìž‘ì¤‘ì—ëŠ” 'ìžë™ ì¸í„°ë„· ë¼ì¸ ë°±ì—…' ê¸°ëŠ¥ì„ ì¤‘ì§€í•  ìˆ˜ ì—†ìŠµë‹ˆë‹¤." 
+var NATCONF_LOADSHARE_ON_LINE_BACKUP="'ìžë™ ì¸í„°ë„· ë¼ì¸ ë°±ì—…' ê¸°ëŠ¥ ë˜í•œ ìžë™ìœ¼ë¡œ ì„¤ì •ë©ë‹ˆë‹¤. ê³„ì† í•˜ì‹œê² ìŠµë‹ˆê¹Œ ?"
+var NATCONF_LOADSHARE_DELETE_RULE="ê·œì¹™ì„ ì‚­ì œí•˜ì‹œê² ìŠµë‹ˆê¹Œ?"
+var NATCONF_PORTFORWARD_SELECT_RULE_TO_DEL="ì‚­ì œí•  ê·œì¹™ì„ ì„ íƒí•´ì•¼ í•©ë‹ˆë‹¤." 
 //sysconf_syslog
-var SYSCONF_SYSLOG_WANRING = "½Ã°£ ¹üÀ§°¡ Àß¸øµÇ¾ú½À´Ï´Ù."
-var SYSCONF_SYSLOG_EMAIL_CONFIRM= "E-mail ¸®Æ÷Æ®¸¦ º¸³»½Ã°Ú½À´Ï±î?"
-var SYSCONF_SYSLOG_CLEAR_CONFIRM= "¸ðµç ½Ã½ºÅÛ ·Î±×°¡ Áö¿öÁý´Ï´Ù"
+var SYSCONF_SYSLOG_WANRING = "ì‹œê°„ ë²”ìœ„ê°€ ìž˜ëª»ë˜ì—ˆìŠµë‹ˆë‹¤."
+var SYSCONF_SYSLOG_EMAIL_CONFIRM= "E-mail ë¦¬í¬íŠ¸ë¥¼ ë³´ë‚´ì‹œê² ìŠµë‹ˆê¹Œ?"
+var SYSCONF_SYSLOG_CLEAR_CONFIRM= "ëª¨ë“  ì‹œìŠ¤í…œ ë¡œê·¸ê°€ ì§€ì›Œì§‘ë‹ˆë‹¤"
 
 //sysconf_login
-var SYSCONF_LOGIN_INVALID_NEW_PASS=     "»õ ¾ÏÈ£°¡ ÀÏÄ¡ÇÏÁö ¾Ê½À´Ï´Ù!"
-var SYSCONF_LOGIN_INVALID_NEW_ID  =     "»õ °èÁ¤Àº ¿µ¹®ÀÚ¿Í ¼ýÀÚÀÇ Á¶ÇÕ¸¸ °¡´É ÇÕ´Ï´Ù."
-var SYSCONF_LOGIN_RELOGIN         =     "¾ÏÈ£¸¦ º¯°æÇÏ¸é, »õ ¾ÏÈ£·Î ´Ù½Ã ·Î±×ÀÎÇÏ¼Å¾ß ÇÕ´Ï´Ù!"
+var SYSCONF_LOGIN_INVALID_NEW_PASS=     "ìƒˆ ì•”í˜¸ê°€ ì¼ì¹˜í•˜ì§€ ì•ŠìŠµë‹ˆë‹¤!"
+var SYSCONF_LOGIN_INVALID_NEW_ID  =     "ìƒˆ ê³„ì •ì€ ì˜ë¬¸ìžì™€ ìˆ«ìžì˜ ì¡°í•©ë§Œ ê°€ëŠ¥ í•©ë‹ˆë‹¤."
+var SYSCONF_LOGIN_RELOGIN         =     "ì•”í˜¸ë¥¼ ë³€ê²½í•˜ë©´, ìƒˆ ì•”í˜¸ë¡œ ë‹¤ì‹œ ë¡œê·¸ì¸í•˜ì…”ì•¼ í•©ë‹ˆë‹¤!"
 
 //expertconf_pptpvpn
-var EXPERTCONF_PPTPVPN_VPN_ACCOUNT_IS_BLANK="VPNÁ¢¼Ó °èÁ¤À» ÀÔ·ÂÇØ¾ß ÇÕ´Ï´Ù"
-var EXPERTCONF_PPTPVPN_VPN_PASSWORD_IS_BLANK="VPNÁ¢¼Ó ¾ÏÈ£¸¦ ÀÔ·ÂÇØ¾ß ÇÕ´Ï´Ù"
-var EXPERTCONF_PPTPVPN_IP_ADDRESS_IS_INVALID="IP ÁÖ¼Ò¸¦ ÀÔ·ÂÇØ¾ß ÇÕ´Ï´Ù"
-var EXPERTCONF_PPTPVPN_DO_YOU_WANT_DELETE="°èÁ¤À» »èÁ¦ÇÏ°Ú½À´Ï±î?"
+var EXPERTCONF_PPTPVPN_VPN_ACCOUNT_IS_BLANK="VPNì ‘ì† ê³„ì •ì„ ìž…ë ¥í•´ì•¼ í•©ë‹ˆë‹¤"
+var EXPERTCONF_PPTPVPN_VPN_PASSWORD_IS_BLANK="VPNì ‘ì† ì•”í˜¸ë¥¼ ìž…ë ¥í•´ì•¼ í•©ë‹ˆë‹¤"
+var EXPERTCONF_PPTPVPN_IP_ADDRESS_IS_INVALID="IP ì£¼ì†Œë¥¼ ìž…ë ¥í•´ì•¼ í•©ë‹ˆë‹¤"
+var EXPERTCONF_PPTPVPN_DO_YOU_WANT_DELETE="ê³„ì •ì„ ì‚­ì œí•˜ê² ìŠµë‹ˆê¹Œ?"
 
 //accesslist
 
-var ACCESSLIST_NOIPLISTMSG_1="¼³Á¤µÈ IP°¡ ¾ø½À´Ï´Ù. ÇöÀç Á¢¼ÓÇÏ½Å PC("
-var ACCESSLIST_NOIPLISTMSG_2=")¸¦ Á¢¼Ó º¸¾È¿¡ Ãß°¡ÇÏ½Ã°Ú½À´Ï±î?"
-var ACCESSLIST_WRONG_INPUT_IP="¾ÆÀÌÇÇ ÁÖ¼Ò°¡ Àß¸ø ÀÔ·Â µÇ¾ú½À´Ï´Ù."
-var ACCESSLIST_WRITE_EXPLAIN="¼³¸íÀ» ÀÔ·ÂÇÏ¼Å¾ß ÇÕ´Ï´Ù."
-var ACCESSLIST_DEL_WANT="»èÁ¦ÇÏ½Ã°Ú½À´Ï±î?"
+var ACCESSLIST_NOIPLISTMSG_1="ì„¤ì •ëœ IPê°€ ì—†ìŠµë‹ˆë‹¤. í˜„ìž¬ ì ‘ì†í•˜ì‹  PC("
+var ACCESSLIST_NOIPLISTMSG_2=")ë¥¼ ì ‘ì† ë³´ì•ˆì— ì¶”ê°€í•˜ì‹œê² ìŠµë‹ˆê¹Œ?"
+var ACCESSLIST_WRONG_INPUT_IP="ì•„ì´í”¼ ì£¼ì†Œê°€ ìž˜ëª» ìž…ë ¥ ë˜ì—ˆìŠµë‹ˆë‹¤."
+var ACCESSLIST_WRITE_EXPLAIN="ì„¤ëª…ì„ ìž…ë ¥í•˜ì…”ì•¼ í•©ë‹ˆë‹¤."
+var ACCESSLIST_DEL_WANT="ì‚­ì œí•˜ì‹œê² ìŠµë‹ˆê¹Œ?"
 
 //reboot
-var REBOOT_CHANGEIP_RETRY_LOGIN="³»ºÎ IPÁÖ¼Ò°¡ º¯°æµÇ¾î ´Ù½Ã ·Î±×ÀÎÇÏ¼Å¾ß ÇÕ´Ï´Ù."
-var REBOOT_CHANGEIP_RETRY_NOLOGIN_WINDOWS="º¯°æµÈ IPÁÖ¼Ò·Î ´Ù½Ã Á¢¼ÓÇÏ¼Å¾ß ÇÕ´Ï´Ù."
-var SYSCONF_RESTORE_RETRY_CONNET="¼³Á¤ º¹±¸µÈ ³»ºÎ IP ÁÖ¼Ò·Î ´Ù½Ã Á¢¼ÓÇÏ¼Å¾ß ÇÕ´Ï´Ù."
+var REBOOT_CHANGEIP_RETRY_LOGIN="ë‚´ë¶€ IPì£¼ì†Œê°€ ë³€ê²½ë˜ì–´ ë‹¤ì‹œ ë¡œê·¸ì¸í•˜ì…”ì•¼ í•©ë‹ˆë‹¤."
+var REBOOT_CHANGEIP_RETRY_NOLOGIN_WINDOWS="ë³€ê²½ëœ IPì£¼ì†Œë¡œ ë‹¤ì‹œ ì ‘ì†í•˜ì…”ì•¼ í•©ë‹ˆë‹¤."
+var SYSCONF_RESTORE_RETRY_CONNET="ì„¤ì • ë³µêµ¬ëœ ë‚´ë¶€ IP ì£¼ì†Œë¡œ ë‹¤ì‹œ ì ‘ì†í•˜ì…”ì•¼ í•©ë‹ˆë‹¤."
 
 //trafficconf_qos
-var QOS_BASIC_WARNING="IPÁÖ¼Ò/Æ÷Æ®/¾îÇÃ¸®ÄÉÀÌ¼Çº° ¼³Á¤ÀÌµÇ¾î ÀÖ´Ù¸é ¸ðµÎ »èÁ¦ µË´Ï´Ù. °è¼Ó ÁøÇà ÇÏ½Ã°Ú½À´Ï±î ?"
-var QOS_COMMON_EXCCED_MAX_CLASS="Å¬·¡½º ÃÖ´ë °¹¼ö¸¦ ÃÊ°úÇß½À´Ï´Ù."
-var QOS_COMMON_EXCCED_MAX_SPEED="ÃÖ´ë ÀÎÅÍ³Ý ¼Óµµ¹üÀ§¸¦ ÃÊ°úÇß½À´Ï´Ù."
-var QOS_COMMON_ISOLATED_EXCEED="'µ¶Á¡' ¼Ó¼ºÀ» °¡Áø Å¬·¡½ºÀÇ ´ë¿ªÆøÀÇ ÇÕÀº ÃÖ´ë ÀÎÅÍ³Ý ¼Óµµ¸¦ ÃÊ°úÇÒ ¼ö ¾ø½À´Ï´Ù."
-var QOS_COMMON_NO_CHANGE_DIRECTION="Å¬·¡½ºÀÇ ¹æÇâÀº º¯°æÇÒ ¼ö ¾ø½À´Ï´Ù."
-var QOS_COMMON_ONLY_DIGIT="Á¤¼ö¸¸ ÀÔ·ÂÇÒ ¼ö ÀÖ½À´Ï´Ù !"
-var QOS_COMMON_BASIC_SETUP_FIRST="Qos ±âº» ¼³Á¤ µÇ¾î ÀÖÁö ¾Ê½À´Ï´Ù !"
-var QOS_PROTOCOL_SELECT="ÇÁ·ÎÅäÄÝÀ» ¼±ÅÃÇØ¾ß ÇÕ´Ï´Ù."
-var QOS_PORT_PORTRANGE="1~65,535±îÁöÀÇ ¹üÀ§·Î ÀÔ·ÂÇØ¾ß ÇÕ´Ï´Ù."
-var QOS_PORT_INVALID_EXT_PORT_RANGE="¿ÜºÎ »ç¿ë Æ÷Æ® ¹üÀ§°¡ Àß¸øµÇ¾ú½À´Ï´Ù!"
-var QOS_BADNWIDTH_EMPTY="¼Óµµ¼³Á¤À» ÀÔ·ÂÇØ¾ß ÇÕ´Ï´Ù."
-var QOS_RATE_RANGE="32 Kbps ~ 50 Mbps ¹üÀ§¸¦ ÁØ¼öÇØ¾ß ÇÕ´Ï´Ù."
-var QOS_BPI_RANGE="IP ÁÖ¼Òº° ´ë¿ªÆø °³º°ÇÒ´ç ¹üÀ§°¡ Àß¸øµÇ¾ú½À´Ï´Ù. (Çã¿ë°¹¼ö : 2 ~ 31)"
+var QOS_BASIC_WARNING="IPì£¼ì†Œ/í¬íŠ¸/ì–´í”Œë¦¬ì¼€ì´ì…˜ë³„ ì„¤ì •ì´ë˜ì–´ ìžˆë‹¤ë©´ ëª¨ë‘ ì‚­ì œ ë©ë‹ˆë‹¤. ê³„ì† ì§„í–‰ í•˜ì‹œê² ìŠµë‹ˆê¹Œ ?"
+var QOS_COMMON_EXCCED_MAX_CLASS="í´ëž˜ìŠ¤ ìµœëŒ€ ê°¯ìˆ˜ë¥¼ ì´ˆê³¼í–ˆìŠµë‹ˆë‹¤."
+var QOS_COMMON_EXCCED_MAX_SPEED="ìµœëŒ€ ì¸í„°ë„· ì†ë„ë²”ìœ„ë¥¼ ì´ˆê³¼í–ˆìŠµë‹ˆë‹¤."
+var QOS_COMMON_ISOLATED_EXCEED="'ë…ì ' ì†ì„±ì„ ê°€ì§„ í´ëž˜ìŠ¤ì˜ ëŒ€ì—­í­ì˜ í•©ì€ ìµœëŒ€ ì¸í„°ë„· ì†ë„ë¥¼ ì´ˆê³¼í•  ìˆ˜ ì—†ìŠµë‹ˆë‹¤."
+var QOS_COMMON_NO_CHANGE_DIRECTION="í´ëž˜ìŠ¤ì˜ ë°©í–¥ì€ ë³€ê²½í•  ìˆ˜ ì—†ìŠµë‹ˆë‹¤."
+var QOS_COMMON_ONLY_DIGIT="ì •ìˆ˜ë§Œ ìž…ë ¥í•  ìˆ˜ ìžˆìŠµë‹ˆë‹¤ !"
+var QOS_COMMON_BASIC_SETUP_FIRST="Qos ê¸°ë³¸ ì„¤ì • ë˜ì–´ ìžˆì§€ ì•ŠìŠµë‹ˆë‹¤ !"
+var QOS_PROTOCOL_SELECT="í”„ë¡œí† ì½œì„ ì„ íƒí•´ì•¼ í•©ë‹ˆë‹¤."
+var QOS_PORT_PORTRANGE="1~65,535ê¹Œì§€ì˜ ë²”ìœ„ë¡œ ìž…ë ¥í•´ì•¼ í•©ë‹ˆë‹¤."
+var QOS_PORT_INVALID_EXT_PORT_RANGE="ì™¸ë¶€ ì‚¬ìš© í¬íŠ¸ ë²”ìœ„ê°€ ìž˜ëª»ë˜ì—ˆìŠµë‹ˆë‹¤!"
+var QOS_BADNWIDTH_EMPTY="ì†ë„ì„¤ì •ì„ ìž…ë ¥í•´ì•¼ í•©ë‹ˆë‹¤."
+var QOS_RATE_RANGE="32 Kbps ~ 50 Mbps ë²”ìœ„ë¥¼ ì¤€ìˆ˜í•´ì•¼ í•©ë‹ˆë‹¤."
+var QOS_BPI_RANGE="IP ì£¼ì†Œë³„ ëŒ€ì—­í­ ê°œë³„í• ë‹¹ ë²”ìœ„ê°€ ìž˜ëª»ë˜ì—ˆìŠµë‹ˆë‹¤. (í—ˆìš©ê°¯ìˆ˜ : 2 ~ 31)"
 
 // wirelessconf_multibssid
-var MSG_DEL_MBSSID_WARNING="¼±ÅÃµÈ ¹«¼± ³×Æ®¿öÅ©°¡ »èÁ¦ µË´Ï´Ù. °è¼Ó ÁøÇà ÇÏ½Ã°Ú½À´Ï±î?"
-var MSG_MBSSID_QOS_WARNING="ÃÖ¼Ò 100 Kbps °ª ÀÌ»ó ¼³Á¤ÇÏ¼Å¾ß ÇÕ´Ï´Ù."
+var MSG_DEL_MBSSID_WARNING="ì„ íƒëœ ë¬´ì„  ë„¤íŠ¸ì›Œí¬ê°€ ì‚­ì œ ë©ë‹ˆë‹¤. ê³„ì† ì§„í–‰ í•˜ì‹œê² ìŠµë‹ˆê¹Œ?"
+var MSG_MBSSID_QOS_WARNING="ìµœì†Œ 100 Kbps ê°’ ì´ìƒ ì„¤ì •í•˜ì…”ì•¼ í•©ë‹ˆë‹¤."
 
 // wirelessconf_multibridge
-var MSG_DEL_WWAN_WANRING="¹«¼±WANÀ» »ç¿ëÇÒ °æ¿ì, À¯¼± WANÆ÷Æ®ÀÇ ±â´ÉÀÌ Áß´ÜµÇ¸ç,\n¹«¼±À» WANÆ÷Æ®(ÀÎÅÍ³ÝÆ÷Æ®)·Î »ç¿ëÇÏ°Ô µË´Ï´Ù\n°è¼ÓÇÏ½Ã°Ú½À´Ï±î?"
+var MSG_DEL_WWAN_WANRING="ë¬´ì„ WANì„ ì‚¬ìš©í•  ê²½ìš°, ìœ ì„  WANí¬íŠ¸ì˜ ê¸°ëŠ¥ì´ ì¤‘ë‹¨ë˜ë©°,\në¬´ì„ ì„ WANí¬íŠ¸(ì¸í„°ë„·í¬íŠ¸)ë¡œ ì‚¬ìš©í•˜ê²Œ ë©ë‹ˆë‹¤\nê³„ì†í•˜ì‹œê² ìŠµë‹ˆê¹Œ?"
 
 //trafficconf_connctrl
-var MSG_CONNECTION_MAX_WARNING="ÃÖ´ë ÄÁ³Ø¼Ç ¼ö°¡ ÃÊ±â°ª º¸´Ù Å©°Å³ª Á¦ÇÑÀÌ ¾øÀ» °æ¿ì,\nÀÏºÎ È¯°æ¿¡¼­´Â ½Ã½ºÅÛÀÇ ¸Þ¸ð¸® ºÎÁ·À¸·Î ÀÎÇØ ¿ÀÀÛµ¿ÀÇ ¿øÀÎÀÌ µÉ ¼ö ÀÖ½À´Ï´Ù.\n\n±×·¡µµ °è¼ÓÇÏ½Ã°Ú½À´Ï±î?" 
-var MSG_CONNECTION_MAX_TOO_SMALL="ÃÖ´ë ÄÁ³Ø¼Ç ¼ö°¡ ³Ê¹« ÀÛ½À´Ï´Ù. 512 ÀÌ»óÀ¸·Î ¼³Á¤ÇÏ½Ê½Ã¿À."
-var MSG_UDP_CONNECTION_MAX_TOO_BIG="ÃÖ´ë UDP ÄÁ³Ø¼Ç ¼ö´Â 10¿¡¼­ ÃÖ´ë ÄÁ³Ø¼Ç ¼ö»çÀÌÀÇ °ªÀ¸·Î ¼³Á¤µÇ¾î¾ß ÇÕ´Ï´Ù."
-var MSG_ICMP_CONNECTION_MAX_TOO_BIG="ÃÖ´ë ICMP ÄÁ³Ø¼Ç ¼ö´Â  ÃÖ´ë ÄÁ³Ø¼Ç ¼ö º¸´Ù ÀÛ°Ô ¼³Á¤µÇ¾î¾ß ÇÕ´Ï´Ù."
-var MSG_INVALID_RATE_PER_MAX="¿Ã¹Ù¸¥ PCº° ÃÖ´ë ÄÁ³Ø¼Ç ºñÀ²ÀÇ °ªÀ» ÀÔ·ÂÇÏ½Ê½Ã¿À."
-var MSG_INVALID_AUTH_FOR_BRIDGE="¹«¼± ¸ÖÆ¼ºê¸®Áö¸¦ ÅëÇØ ¿¬°áÇÒ ¼ö ¾ø´Â APÀÔ´Ï´Ù."
+var MSG_CONNECTION_MAX_WARNING="ìµœëŒ€ ì»¨ë„¥ì…˜ ìˆ˜ê°€ ì´ˆê¸°ê°’ ë³´ë‹¤ í¬ê±°ë‚˜ ì œí•œì´ ì—†ì„ ê²½ìš°,\nì¼ë¶€ í™˜ê²½ì—ì„œëŠ” ì‹œìŠ¤í…œì˜ ë©”ëª¨ë¦¬ ë¶€ì¡±ìœ¼ë¡œ ì¸í•´ ì˜¤ìž‘ë™ì˜ ì›ì¸ì´ ë  ìˆ˜ ìžˆìŠµë‹ˆë‹¤.\n\nê·¸ëž˜ë„ ê³„ì†í•˜ì‹œê² ìŠµë‹ˆê¹Œ?" 
+var MSG_CONNECTION_MAX_TOO_SMALL="ìµœëŒ€ ì»¨ë„¥ì…˜ ìˆ˜ê°€ ë„ˆë¬´ ìž‘ìŠµë‹ˆë‹¤. 512 ì´ìƒìœ¼ë¡œ ì„¤ì •í•˜ì‹­ì‹œì˜¤."
+var MSG_UDP_CONNECTION_MAX_TOO_BIG="ìµœëŒ€ UDP ì»¨ë„¥ì…˜ ìˆ˜ëŠ” 10ì—ì„œ ìµœëŒ€ ì»¨ë„¥ì…˜ ìˆ˜ì‚¬ì´ì˜ ê°’ìœ¼ë¡œ ì„¤ì •ë˜ì–´ì•¼ í•©ë‹ˆë‹¤."
+var MSG_ICMP_CONNECTION_MAX_TOO_BIG="ìµœëŒ€ ICMP ì»¨ë„¥ì…˜ ìˆ˜ëŠ”  ìµœëŒ€ ì»¨ë„¥ì…˜ ìˆ˜ ë³´ë‹¤ ìž‘ê²Œ ì„¤ì •ë˜ì–´ì•¼ í•©ë‹ˆë‹¤."
+var MSG_INVALID_RATE_PER_MAX="ì˜¬ë°”ë¥¸ PCë³„ ìµœëŒ€ ì»¨ë„¥ì…˜ ë¹„ìœ¨ì˜ ê°’ì„ ìž…ë ¥í•˜ì‹­ì‹œì˜¤."
+var MSG_INVALID_AUTH_FOR_BRIDGE="ë¬´ì„  ë©€í‹°ë¸Œë¦¬ì§€ë¥¼ í†µí•´ ì—°ê²°í•  ìˆ˜ ì—†ëŠ” APìž…ë‹ˆë‹¤."
 
 
 //sysconf_misc
-var MSG_WBM_POPUP="°ü¸®µµ±¸¸¦ À» ´Ý°í ·Î±×ÀÎ È­¸éÀ» ÀçÁ¢¼ÓÇÏ¿©¾ß ¼³Á¤ÀÌ Àû¿ëµË´Ï´Ù."
+var MSG_WBM_POPUP="ê´€ë¦¬ë„êµ¬ë¥¼ ì„ ë‹«ê³  ë¡œê·¸ì¸ í™”ë©´ì„ ìž¬ì ‘ì†í•˜ì—¬ì•¼ ì„¤ì •ì´ ì ìš©ë©ë‹ˆë‹¤."
 
 // trafficconf_switch
-var MSG_SAME_PORT_MIRROR="°°Àº Æ÷Æ®·Î ¹Ì·¯¸µÀ» ÇÒ ¼ö ¾ø½À´Ï´Ù."
+var MSG_SAME_PORT_MIRROR="ê°™ì€ í¬íŠ¸ë¡œ ë¯¸ëŸ¬ë§ì„ í•  ìˆ˜ ì—†ìŠµë‹ˆë‹¤."
 
-var MSG_HUBMODE_WARNING="!!! ÁÖÀÇ»çÇ× !!!\nÇãºê¸ðµå »ç¿ë ½Ã ¸ðµç ÀÎÅÍ³Ý °øÀ¯±âÀÇ ±â´ÉÀÌ Áß´ÜµÇ¸ç,\n°ü¸®ÀÚ ÆäÀÌÁö·Î Á¢¼ÓÇÒ ¼ö ¾ø½À´Ï´Ù.\n\n\
-Çãºê¸ðµå¸¦ ÇØÁ¦ÇÏ±â À§ÇØ¼­´Â\nCPU(PWR/RUN) LED°¡ ÁÖ±âÀûÀ¸·Î Á¡¸êµÉ¶§±îÁö, Reset(ÃÊ±âÈ­)¹öÆ°À» ´©¸¨´Ï´Ù.\n\n\
-°è¼ÓÇÏ½Ã°Ú½À´Ï±î?"
-var MSG_HUBMODE_CONFIRM="È®ÀÎ ¹öÆ°À» ´©¸£¸é Çãºê¸ðµå·Î ¼³Á¤µÇ¸ç,\n´õÀÌ»ó °ü¸®ÀÚ ÆäÀÌÁö¸¦ º¼¼ö ¾ø½À´Ï´Ù.\n\n°è¼ÓÇÏ½Ã°Ú½À´Ï±î?"
+var MSG_HUBMODE_WARNING="!!! ì£¼ì˜ì‚¬í•­ !!!\ní—ˆë¸Œëª¨ë“œ ì‚¬ìš© ì‹œ ëª¨ë“  ì¸í„°ë„· ê³µìœ ê¸°ì˜ ê¸°ëŠ¥ì´ ì¤‘ë‹¨ë˜ë©°,\nê´€ë¦¬ìž íŽ˜ì´ì§€ë¡œ ì ‘ì†í•  ìˆ˜ ì—†ìŠµë‹ˆë‹¤.\n\n\
+í—ˆë¸Œëª¨ë“œë¥¼ í•´ì œí•˜ê¸° ìœ„í•´ì„œëŠ”\nCPU(PWR/RUN) LEDê°€ ì£¼ê¸°ì ìœ¼ë¡œ ì ë©¸ë ë•Œê¹Œì§€, Reset(ì´ˆê¸°í™”)ë²„íŠ¼ì„ ëˆ„ë¦…ë‹ˆë‹¤.\n\n\
+ê³„ì†í•˜ì‹œê² ìŠµë‹ˆê¹Œ?"
+var MSG_HUBMODE_CONFIRM="í™•ì¸ ë²„íŠ¼ì„ ëˆ„ë¥´ë©´ í—ˆë¸Œëª¨ë“œë¡œ ì„¤ì •ë˜ë©°,\në”ì´ìƒ ê´€ë¦¬ìž íŽ˜ì´ì§€ë¥¼ ë³¼ìˆ˜ ì—†ìŠµë‹ˆë‹¤.\n\nê³„ì†í•˜ì‹œê² ìŠµë‹ˆê¹Œ?"
 
 // trafficconf_portqos
-var MSG_PORTQOS_BOTH_ZERO=": 0 Mbps·Î ¼³Á¤ÇÒ ¼ö ¾ø½À´Ï´Ù."
-var MSG_PORTQOS_MAX_ERROR=": 100 Mbps ÀÌ»óÀÇ °ªÀ¸·Î ¼³Á¤ÇÒ ¼ö ¾ø½À´Ï´Ù."
-var MSG_PORTQOS_INVALID_VALUE=": ¼Óµµ ¼³Á¤ °ªÀÌ Àß¸øµÇ¾ú½À´Ï´Ù. ("
+var MSG_PORTQOS_BOTH_ZERO=": 0 Mbpsë¡œ ì„¤ì •í•  ìˆ˜ ì—†ìŠµë‹ˆë‹¤."
+var MSG_PORTQOS_MAX_ERROR=": 100 Mbps ì´ìƒì˜ ê°’ìœ¼ë¡œ ì„¤ì •í•  ìˆ˜ ì—†ìŠµë‹ˆë‹¤."
+var MSG_PORTQOS_INVALID_VALUE=": ì†ë„ ì„¤ì • ê°’ì´ ìž˜ëª»ë˜ì—ˆìŠµë‹ˆë‹¤. ("
 
 
 // iframe_pppoe_sched
-var MSG_INVALID_HOUR_VALUE="½Ã°£ ¼³Á¤Àº 0 °ú 23 »çÀÌÀÇ ¼ýÀÚ¸¦ ÀÔ·ÂÇÕ´Ï´Ù."
-var MSG_INVALID_MIN_VALUE="ºÐ ¼³Á¤Àº 0 °ú 59 »çÀÌÀÇ ¼ýÀÚ¸¦ ÀÔ·ÂÇÕ´Ï´Ù."
-var MSG_PPPOE_SCHEDULE_SAME_RULE="°°Àº ½ºÄÉÁÙ ¼³Á¤ÀÌ Á¸ÀçÇÕ´Ï´Ù."
+var MSG_INVALID_HOUR_VALUE="ì‹œê°„ ì„¤ì •ì€ 0 ê³¼ 23 ì‚¬ì´ì˜ ìˆ«ìžë¥¼ ìž…ë ¥í•©ë‹ˆë‹¤."
+var MSG_INVALID_MIN_VALUE="ë¶„ ì„¤ì •ì€ 0 ê³¼ 59 ì‚¬ì´ì˜ ìˆ«ìžë¥¼ ìž…ë ¥í•©ë‹ˆë‹¤."
+var MSG_PPPOE_SCHEDULE_SAME_RULE="ê°™ì€ ìŠ¤ì¼€ì¤„ ì„¤ì •ì´ ì¡´ìž¬í•©ë‹ˆë‹¤."
 
 // trafficconf_lspolicy
-var MSG_BACKUP_METHOD_AT_LEAST_ONE="ÇÏ³ª ÀÌ»óÀÇ ¹æ¹ýÀ» ¼±ÅÃÇÏ¼Å¾ß ÇÕ´Ï´Ù."
-var MSG_BACKUP_METHOD_DOMAIN="µµ¸ÞÀÎ ÀÌ¸§À» ÀÔ·ÂÇÏ¼Å¾ß ÇÕ´Ï´Ù."
+var MSG_BACKUP_METHOD_AT_LEAST_ONE="í•˜ë‚˜ ì´ìƒì˜ ë°©ë²•ì„ ì„ íƒí•˜ì…”ì•¼ í•©ë‹ˆë‹¤."
+var MSG_BACKUP_METHOD_DOMAIN="ë„ë©”ì¸ ì´ë¦„ì„ ìž…ë ¥í•˜ì…”ì•¼ í•©ë‹ˆë‹¤."
 
-var MSG_INVALID_PROTONUM="Àß¸øµÈ ÇÁ·ÎÅäÄÝ ¹øÈ£ÀÔ´Ï´Ù."
-
-
-var MSG_MBRIDGE_AUTO_CHANNEL_STRING ='[ÀÚµ¿ Ã¤³Î °Ë»ö] ±â´ÉÀº ºê¸®Áö¸¦ ÅëÇØ ¿¬°áÇÏ·Á´Â APÀÇ Ã¤³ÎÀÌ º¯°æµÇ¾úÀ» °æ¿ì,\n\
-ÀÚµ¿À¸·Î Ã¤³ÎÀ» °Ë»öÇÏ¿© ´Ù½Ã ¿¬°áÀ» ÇØÁÖ´Â ±â´ÉÀÔ´Ï´Ù.\n\
-µû¶ó¼­,  [ÀÚµ¿ Ã¤³Î °Ë»ö] ¼³Á¤ ½Ã ºê¸®ÁöÀÇ ¿¬°áÀÌ ²÷¾îÁø °æ¿ì,\n\
-º» ÀåÄ¡ÀÇ AP±â´ÉÀÌ Á¤»óÀûÀ¸·Î µ¿ÀÛÇÏÁö ¾ÊÀ» ¼ö ÀÖ½À´Ï´Ù.\n\
-°è¼Ó ÇÏ½Ã°Ú½À´Ï±î?';
-
-var TRAFFICCONF_ALL_OPTIONS_CLEAR =  "¸ðµç ¿É¼Ç¼³Á¤ÀÌ ÇØÁ¦µË´Ï´Ù.\n°è¼ÓÇÏ½Ã°Ú½À´Ï±î?"
-var MSG_SELECT_DEL_MBSS = "»èÁ¦ÇÒ ¹«¼± ³×Æ®¿öÅ©¸¦ ¼±ÅÃÇÏ½Ê½Ã¿À."
-
-var AUTO_STRING = "ÀÚµ¿"
-var MBRIDGE_AUTO_CHANNEL_SEARCH = "ÀÚµ¿ Ã¤³Î °Ë»ö"
+var MSG_INVALID_PROTONUM="ìž˜ëª»ëœ í”„ë¡œí† ì½œ ë²ˆí˜¸ìž…ë‹ˆë‹¤."
 
 
-var UPPER_CHANNEL_TXT =  "ÇÏÀ§"
-var LOWER_CHANNEL_TXT = "»óÀ§"
+var MSG_MBRIDGE_AUTO_CHANNEL_STRING ='[ìžë™ ì±„ë„ ê²€ìƒ‰] ê¸°ëŠ¥ì€ ë¸Œë¦¬ì§€ë¥¼ í†µí•´ ì—°ê²°í•˜ë ¤ëŠ” APì˜ ì±„ë„ì´ ë³€ê²½ë˜ì—ˆì„ ê²½ìš°,\n\
+ìžë™ìœ¼ë¡œ ì±„ë„ì„ ê²€ìƒ‰í•˜ì—¬ ë‹¤ì‹œ ì—°ê²°ì„ í•´ì£¼ëŠ” ê¸°ëŠ¥ìž…ë‹ˆë‹¤.\n\
+ë”°ë¼ì„œ,  [ìžë™ ì±„ë„ ê²€ìƒ‰] ì„¤ì • ì‹œ ë¸Œë¦¬ì§€ì˜ ì—°ê²°ì´ ëŠì–´ì§„ ê²½ìš°,\n\
+ë³¸ ìž¥ì¹˜ì˜ APê¸°ëŠ¥ì´ ì •ìƒì ìœ¼ë¡œ ë™ìž‘í•˜ì§€ ì•Šì„ ìˆ˜ ìžˆìŠµë‹ˆë‹¤.\n\
+ê³„ì† í•˜ì‹œê² ìŠµë‹ˆê¹Œ?';
 
-var LAN_GATEWAY_WARNING_MSG = "°øÀ¯±â¸¦ AP ¶Ç´Â Çãºê Àü¿ëÀ¸·Î »ç¿ë ½Ã, °øÀ¯±â ÀÚÃ¼ÀÇ ÀÎÅÍ³Ý ¿¬°áÀ» À§ÇÑ ¼³Á¤ÀÔ´Ï´Ù.\n°è¼ÓÇÏ½Ã°Ú½À´Ï±î? ";
-var MSG_IPPOOL_MAX_WARNING = "IPÁÖ¼Ò¹üÀ§Á¶°ÇÀÇ ÃÖ´ë °¹¼ö¸¦ ÃÊ°úÇß½À´Ï´Ù." 
+var TRAFFICCONF_ALL_OPTIONS_CLEAR =  "ëª¨ë“  ì˜µì…˜ì„¤ì •ì´ í•´ì œë©ë‹ˆë‹¤.\nê³„ì†í•˜ì‹œê² ìŠµë‹ˆê¹Œ?"
+var MSG_SELECT_DEL_MBSS = "ì‚­ì œí•  ë¬´ì„  ë„¤íŠ¸ì›Œí¬ë¥¼ ì„ íƒí•˜ì‹­ì‹œì˜¤."
+
+var AUTO_STRING = "ìžë™"
+var MBRIDGE_AUTO_CHANNEL_SEARCH = "ìžë™ ì±„ë„ ê²€ìƒ‰"
 
 
-var NASCONF_SAMBANAME_BLANK= "¼­¹öÀÌ¸§À» ÀÔ·ÂÇØ¾ß ÇÕ´Ï´Ù."
-var NASCONF_SAMBAGROUP_BLANK= "ÀÛ¾÷±×·ìÀ» ÀÔ·ÂÇØ¾ß ÇÕ´Ï´Ù."
+var UPPER_CHANNEL_TXT =  "í•˜ìœ„"
+var LOWER_CHANNEL_TXT = "ìƒìœ„"
+
+var LAN_GATEWAY_WARNING_MSG = "ê³µìœ ê¸°ë¥¼ AP ë˜ëŠ” í—ˆë¸Œ ì „ìš©ìœ¼ë¡œ ì‚¬ìš© ì‹œ, ê³µìœ ê¸° ìžì²´ì˜ ì¸í„°ë„· ì—°ê²°ì„ ìœ„í•œ ì„¤ì •ìž…ë‹ˆë‹¤.\nê³„ì†í•˜ì‹œê² ìŠµë‹ˆê¹Œ? ";
+var MSG_IPPOOL_MAX_WARNING = "IPì£¼ì†Œë²”ìœ„ì¡°ê±´ì˜ ìµœëŒ€ ê°¯ìˆ˜ë¥¼ ì´ˆê³¼í–ˆìŠµë‹ˆë‹¤." 
+
+
+var NASCONF_SAMBANAME_BLANK= "ì„œë²„ì´ë¦„ì„ ìž…ë ¥í•´ì•¼ í•©ë‹ˆë‹¤."
+var NASCONF_SAMBAGROUP_BLANK= "ìž‘ì—…ê·¸ë£¹ì„ ìž…ë ¥í•´ì•¼ í•©ë‹ˆë‹¤."
 
 
 var MSG_DFS_WARNING="This channel is DFS channel.\nAP may be activated only unless radar signal is found during 1 ~ 10 minutes."
 
 
-var SYSCONF_LOGIN_BLANK_ID    = "°ü¸®ÀÚ °èÁ¤À» ÀÔ·ÂÇØ¾ß ÇÕ´Ï´Ù."
-var SYSCONF_LOGIN_BLANK_PASS  = "»õ ¾ÏÈ£¸¦ ÀÔ·ÂÇØ¾ßÇÕ´Ï´Ù."
-var SYSCONF_LOGIN_REMOVE_WARNING  = "¼³Á¤µÈ °èÁ¤/¾ÏÈ£¸¦ »èÁ¦ÇÕ´Ï´Ù. °è¼ÓÇÏ½Ã°Ú½À´Ï±î?"
-var SYSCONF_LOGIN_INVALID_SESSION_TIMEOUT  = "ÀÚµ¿ ·Î±× ¾Æ¿ô ½Ã°£Àº 1 ~ 60 ºÐ»çÀÌÀÇ °ªÀ» ÀÔ·ÂÇÏ¿©¾ß ÇÕ´Ï´Ù."
+var SYSCONF_LOGIN_BLANK_ID    = "ê´€ë¦¬ìž ê³„ì •ì„ ìž…ë ¥í•´ì•¼ í•©ë‹ˆë‹¤."
+var SYSCONF_LOGIN_BLANK_PASS  = "ìƒˆ ì•”í˜¸ë¥¼ ìž…ë ¥í•´ì•¼í•©ë‹ˆë‹¤."
+var SYSCONF_LOGIN_REMOVE_WARNING  = "ì„¤ì •ëœ ê³„ì •/ì•”í˜¸ë¥¼ ì‚­ì œí•©ë‹ˆë‹¤. ê³„ì†í•˜ì‹œê² ìŠµë‹ˆê¹Œ?"
+var SYSCONF_LOGIN_INVALID_SESSION_TIMEOUT  = "ìžë™ ë¡œê·¸ ì•„ì›ƒ ì‹œê°„ì€ 1 ~ 60 ë¶„ì‚¬ì´ì˜ ê°’ì„ ìž…ë ¥í•˜ì—¬ì•¼ í•©ë‹ˆë‹¤."
 
 
-var SYSCONF_LOGIN_CANT_REMOVE_ID  = "¼¼¼Ç¹æ½Ä¿¡¼­´Â °èÁ¤ ¹× ¾ÏÈ£¸¦ »èÁ¦ÇÒ ¼ö ¾ø½À´Ï´Ù."
-var SYSCONF_LOGIN_SHOULD_HAVE_IDPASS  = "¼¼¼Ç¹æ½Ä »ç¿ë ½Ã °èÁ¤ ¹× ¾ÏÈ£¸¦ ¸ÕÀú ¼³Á¤ÇØ¾ß ÇÕ´Ï´Ù."
-var SYSCONF_LOGIN_RELOGIN_SESSION  = "¼³Á¤ ÈÄ ·Î±×ÀÎ ÆäÀÌÁö·Î ÀÌµ¿ÇÕ´Ï´Ù. °è¼ÓÇÏ½Ã°Ú½À´Ï±î?"
+var SYSCONF_LOGIN_CANT_REMOVE_ID  = "ì„¸ì…˜ë°©ì‹ì—ì„œëŠ” ê³„ì • ë° ì•”í˜¸ë¥¼ ì‚­ì œí•  ìˆ˜ ì—†ìŠµë‹ˆë‹¤."
+var SYSCONF_LOGIN_SHOULD_HAVE_IDPASS  = "ì„¸ì…˜ë°©ì‹ ì‚¬ìš© ì‹œ ê³„ì • ë° ì•”í˜¸ë¥¼ ë¨¼ì € ì„¤ì •í•´ì•¼ í•©ë‹ˆë‹¤."
+var SYSCONF_LOGIN_RELOGIN_SESSION  = "ì„¤ì • í›„ ë¡œê·¸ì¸ íŽ˜ì´ì§€ë¡œ ì´ë™í•©ë‹ˆë‹¤. ê³„ì†í•˜ì‹œê² ìŠµë‹ˆê¹Œ?"
 
-var MSG_PPTPVPN_REBOOT = "VPN ¼³Á¤À» º¯°æÇÏ±âÀ§ÇØ ½Ã½ºÅÛÀ» Àç½ÃÀÛÇÕ´Ï´Ù. °è¼ÓÇÏ½Ã°Ú½À´Ï±î?"
-var MSG_IGMP_REBOOT = "IPTV ¼³Á¤À» º¯°æÇÏ±âÀ§ÇØ ½Ã½ºÅÛÀ» Àç½ÃÀÛÇÕ´Ï´Ù. °è¼ÓÇÏ½Ã°Ú½À´Ï±î?"
+var MSG_PPTPVPN_REBOOT = "VPN ì„¤ì •ì„ ë³€ê²½í•˜ê¸°ìœ„í•´ ì‹œìŠ¤í…œì„ ìž¬ì‹œìž‘í•©ë‹ˆë‹¤. ê³„ì†í•˜ì‹œê² ìŠµë‹ˆê¹Œ?"
+var MSG_IGMP_REBOOT = "IPTV ì„¤ì •ì„ ë³€ê²½í•˜ê¸°ìœ„í•´ ì‹œìŠ¤í…œì„ ìž¬ì‹œìž‘í•©ë‹ˆë‹¤. ê³„ì†í•˜ì‹œê² ìŠµë‹ˆê¹Œ?"
 
-var MSG_NO_DEL_WDS="»èÁ¦ÇÒ WDS¸¦ ¼±ÅÃÇÏ¼¼¿ä."
-var MSG_QOS_REBOOT="QOS ¼³Á¤À» º¯°æÇÏ±âÀ§ÇØ¼­´Â ½Ã½ºÅÛÀ» Àç½ÃÀÛÇØ¾ßÇÕ´Ï´Ù. °è¼ÓÇÏ½Ã°Ú½À´Ï±î?"
-
-
-var UNALLOWED_ID_MSG  = "Çã¿ëµÇÁö ¾ÊÀº »ç¿ëÀÚ IDÀÔ´Ï´Ù."
+var MSG_NO_DEL_WDS="ì‚­ì œí•  WDSë¥¼ ì„ íƒí•˜ì„¸ìš”."
+var MSG_QOS_REBOOT="QOS ì„¤ì •ì„ ë³€ê²½í•˜ê¸°ìœ„í•´ì„œëŠ” ì‹œìŠ¤í…œì„ ìž¬ì‹œìž‘í•´ì•¼í•©ë‹ˆë‹¤. ê³„ì†í•˜ì‹œê² ìŠµë‹ˆê¹Œ?"
 
 
-var DESC_INVALID_DCS_PERIOD="Ã¤³Î °Ë»ö ÁÖ±â´Â 1 ~ 100 ½Ã°£ »çÀÌ·Î ÀÔ·ÂÇØ¾ß ÇÕ´Ï´Ù."
-
-var INVALID_HOUR_TEXT="[½Ã°£] ÀÔ·Â¶õÀº 0 ~ 23 »çÀÌÀÇ ¼ýÀÚ·Î ÀÔ·Â°¡´ÉÇÕ´Ï´Ù."
-var INVALID_MIN_TEXT="[ºÐ] ÀÔ·Â¶õÀº Àº 0 ~ 59 »çÀÌÀÇ ¼ýÀÚ·Î ÀÔ·Â°¡´ÉÇÕ´Ï´Ù."
-var SELECT_DAY_DESC="[¸ÅÀÏ] ¶Ç´Â [Àû¿ëµÉ ¿äÀÏ] À» ¼±ÅÃÇÏ¼¼¿ä."
-
-var SNMP_INVALID_PORT= "Æ÷Æ®¹øÈ£´Â 1 - 65535 »çÀÌÀÇ °ªÀ» ÀÔ·ÂÇØ¾ßÇÕ´Ï´Ù."
-var SNMP_COMMUNITY_ALERT= "Community¸¦ ÀÔ·ÂÇÏ½Ê½Ã¿À."
-
-var MSG_INVALID_RADIUS_SERVER="RADIUS ¼­¹ö ÁÖ¼Ò°¡ Àß¸øµÇ¾ú½À´Ï´Ù."
-var MSG_INVALID_RADIUS_SECRET="RADIUS ¼­¹ö ¾ÏÈ£°¡ Àß¸øµÇ¾ú½À´Ï´Ù."
-var MSG_INVALID_RADIUS_PORT="RADIUS ¼­¹ö Æ÷Æ®°ªÀÌ Àß¸øµÇ¾ú½À´Ï´Ù."
-var MSG_WEP_WARNING="WEP ¶Ç´Â TKIP ¾ÏÈ£È­ ¼³Á¤ ½Ã¿¡´Â ÃÖ´ë ¼Óµµ 54MbpsÀÎ 11g¸ðµå·Î¸¸ µ¿ÀÛÇÕ´Ï´Ù.\n°è¼ÓÇÏ½Ã°Ú½À´Ï±î?"
-var MSG_WEP_SEC_WARNING="WEP ¾ÏÈ£È­ ¼³Á¤Àº ¸Å¿ì Ãë¾àÇÑ º¸¾È¼³Á¤À¸·Î, »ç¿ëÇÏ´Â °ÍÀ» ±ÇÀåÇÏÁö ¾Ê½À´Ï´Ù.\n±×·¡µµ °è¼ÓÇÏ½Ã°Ú½À´Ï±î?"
-var MSG_WIRELESS_WAN_WARNING="ÀÌ¹Ì ´Ù¸¥ ¹«¼± ³×Æ®¿öÅ©¿¡¼­ ¹«¼±WAN±â´ÉÀ» »ç¿ëÇÏ°í ÀÕ½À´Ï´Ù.\n´Ù¸¥ ¹«¼± ³×Æ®¿öÅ©ÀÇ ¹«¼±WAN±â´ÉÀ» ²ô°í ¼³Á¤ÇÏ½Ê½Ã¿À."
-
-var MSG_WDS_CHANNEL_WARNING="¿¬°áÇÏ·Á´Â APÀÇ Ã¤³Î°ú ³ªÀÇ ¼³Á¤µÈ Ã¤³ÎÀÌ ´Ù¸¨´Ï´Ù. \nWDS¼³Á¤ ÈÄ, [¹«¼± ¼³Á¤/º¸¾È] ¸Þ´º¿¡¼­ Ã¤³ÎÀ» µ¿ÀÏÇÏ°Ô ±¸¼ºÇÏ¿©¾ß ÇÕ´Ï´Ù.\n°è¼ÓÇÏ½Ã°Ú½À´Ï±î?"
-
-var MSG_NEW_BSS="»õ ¹«¼± ³×Æ®¿öÅ© Ãß°¡" 
-
-var MSG_ADD_MAC_WARNING="Ãß°¡µÉ MACÁÖ¼Ò¸¦ Ã¼Å©ÇÏ¿© ÁÖ½Ê½Ã¿À."
-var MSG_REMOVE_MAC_WARNING="»èÁ¦µÉ MACÁÖ¼Ò¸¦ Ã¼Å©ÇÏ¿© ÁÖ½Ê½Ã¿À."
-
-var MSG_NEW_FOLDER_ERR="»ý¼ºÇÒ Æú´õ¸íÀ» ÀÔ·ÂÇÏ¿© ÁÖ½Ê½Ã¿À."
-var MSG_SELECT_FOLDER_ERR="¹é¾÷Æú´õ¸¦ ¼±ÅÃÇÏ¿© ÁÖ½Ê½Ã¿À."
-
-var MSG_REMOVE_IPDISK_DDNS="ipDISK¼­ºñ½º¸¦ Áß´ÜÇÒ °æ¿ì,¼³Á¤µÈ ipDISKÁÖ¼Ò µî·ÏÀÌ Ãë¼ÒµË´Ï´Ù..\n¶ÇÇÑ, ¼³Á¤µÇ¾ú´ø ipDISK ÁÖ¼Ò¸¦ ´Ù¸¥ »ç¿ëÀÚ°¡ »ç¿ëÇÒ ¼öµµ ÀÖ½À´Ï´Ù.\n°è¼ÓÇÏ½Ã°Ú½À´Ï±î?"
-
-var MSG_NEED_REBOOT_FOR_WWAN="ÇöÀç ±¸¼º¿¡¼­ ¹«¼±WANÀ» ¼³Á¤ÇÏ·Á¸é ½Ã½ºÅÛÀ» ÀçºÎÆÃÇØ¾ßÇÕ´Ï´Ù.\n°è¼ÓÇÏ½Ã°Ú½À´Ï±î?"
-
-var MSG_ENABLE_ONE_SERVICE_ID="ÃÖ¼Ò ÇÑ¸íÀÌ»óÀÇ »ç¿ëÀÚ¸¦ ¼³Á¤ÇØ¾ß ÇÕ´Ï´Ù."
-var MSG_DUPLICATE_SERVICE_ID="µ¿ÀÏÇÑ »ç¿ëÀÚID¸¦ ¼³Á¤ÇÒ ¼ö ¾ø½À´Ï´Ù."
-
-var PASSWORD_NEEDED_TO_SET_THIS="ÇØ´ç ±â´ÉÀº °ü¸®ÀÚ °èÁ¤ ¹× ¾ÏÈ£¸¦ ¼³Á¤ ÈÄ »ç¿ë°¡´É ÇÕ´Ï´Ù.\n°ü¸®ÀÚ °èÁ¤ ¹× ¾ÏÈ£¸¦ ¼³Á¤ÇÏ°Ú½À´Ï±î?"
-
-var CANT_SET_DEFAULT_ID_PASS="ÃÊ±âÈ­½Ã ¼³Á¤µÇ´Â °èÁ¤ ¹× ¾ÏÈ£¸¦ »ç¿ëÇÏ¿´½À´Ï´Ù.\n°èÁ¤ ¹× ¾ÏÈ£¸¦ º¯°æÇÏ¿© ¼³Á¤ÇÏ½Ê½Ã¿À."
-var SYSCONF_LOGIN_NEED_CAPTCHA_CODE="º¸¾ÈÄÚµå¸¦ ÀÔ·ÂÇØ¾ßÇÕ´Ï´Ù."
+var UNALLOWED_ID_MSG  = "í—ˆìš©ë˜ì§€ ì•Šì€ ì‚¬ìš©ìž IDìž…ë‹ˆë‹¤."
 
 
-var MSG_SELECT_TORRENT_FOLDER_ERR="´Ù¿î·Îµå Æú´õ¸¦ ¼±ÅÃÇÏ¿© ÁÖ½Ê½Ã¿À."
-var MSG_SELECT_MEDIA_FOLDER_ERR="¹Ìµð¾î Æú´õ¸¦ ¼±ÅÃÇÏ¿© ÁÖ½Ê½Ã¿À."
-var MSG_MEDIA_NAME_ERR="¼­¹öÀÌ¸§À» ÀÔ·ÂÇÏ¿© ÁÖ½Ê½Ã¿À."
+var DESC_INVALID_DCS_PERIOD="ì±„ë„ ê²€ìƒ‰ ì£¼ê¸°ëŠ” 1 ~ 100 ì‹œê°„ ì‚¬ì´ë¡œ ìž…ë ¥í•´ì•¼ í•©ë‹ˆë‹¤."
 
-var MSG_SELECT_ITUNES_FOLDER_ERR="iTunes Æú´õ¸¦ ¼±ÅÃÇÏ¿© ÁÖ½Ê½Ã¿À."
-var MSG_USB_MODE_WARNING="USB¸ðµå¸¦ º¯°æÇÏ±â À§ÇØ¼­´Â ½Ã½ºÅÛÀ» Àç½ÃÀÛÇÏ¿©¾ß ÇÕ´Ï´Ù.\n°è¼ÓÇÏ½Ã°Ú½À´Ï±î?"
+var INVALID_HOUR_TEXT="[ì‹œê°„] ìž…ë ¥ëž€ì€ 0 ~ 23 ì‚¬ì´ì˜ ìˆ«ìžë¡œ ìž…ë ¥ê°€ëŠ¥í•©ë‹ˆë‹¤."
+var INVALID_MIN_TEXT="[ë¶„] ìž…ë ¥ëž€ì€ ì€ 0 ~ 59 ì‚¬ì´ì˜ ìˆ«ìžë¡œ ìž…ë ¥ê°€ëŠ¥í•©ë‹ˆë‹¤."
+var SELECT_DAY_DESC="[ë§¤ì¼] ë˜ëŠ” [ì ìš©ë  ìš”ì¼] ì„ ì„ íƒí•˜ì„¸ìš”."
 
-var MSG_SELECT_APACHE_DOC_FOLDER_ERR="DocumentRoot¸¦ ¼±ÅÃÇÏ¿© ÁÖ½Ê½Ã¿À."
-var MSG_SELECT_APACHE_SERVER_FOLDER_ERR="ServerRoot¸¦ ¼±ÅÃÇÏ¿© ÁÖ½Ê½Ã¿À."
+var SNMP_INVALID_PORT= "í¬íŠ¸ë²ˆí˜¸ëŠ” 1 - 65535 ì‚¬ì´ì˜ ê°’ì„ ìž…ë ¥í•´ì•¼í•©ë‹ˆë‹¤."
+var SNMP_COMMUNITY_ALERT= "Communityë¥¼ ìž…ë ¥í•˜ì‹­ì‹œì˜¤."
 
-var MSG_SELECT_MYSQL_FOLDER_ERR="DBÆú´õ¸¦ ¼±ÅÃÇÏ¿© ÁÖ½Ê½Ã¿À."
+var MSG_INVALID_RADIUS_SERVER="RADIUS ì„œë²„ ì£¼ì†Œê°€ ìž˜ëª»ë˜ì—ˆìŠµë‹ˆë‹¤."
+var MSG_INVALID_RADIUS_SECRET="RADIUS ì„œë²„ ì•”í˜¸ê°€ ìž˜ëª»ë˜ì—ˆìŠµë‹ˆë‹¤."
+var MSG_INVALID_RADIUS_PORT="RADIUS ì„œë²„ í¬íŠ¸ê°’ì´ ìž˜ëª»ë˜ì—ˆìŠµë‹ˆë‹¤."
+var MSG_WEP_WARNING="WEP ë˜ëŠ” TKIP ì•”í˜¸í™” ì„¤ì • ì‹œì—ëŠ” ìµœëŒ€ ì†ë„ 54Mbpsì¸ 11gëª¨ë“œë¡œë§Œ ë™ìž‘í•©ë‹ˆë‹¤.\nê³„ì†í•˜ì‹œê² ìŠµë‹ˆê¹Œ?"
+var MSG_WEP_SEC_WARNING="WEP ì•”í˜¸í™” ì„¤ì •ì€ ë§¤ìš° ì·¨ì•½í•œ ë³´ì•ˆì„¤ì •ìœ¼ë¡œ, ì‚¬ìš©í•˜ëŠ” ê²ƒì„ ê¶Œìž¥í•˜ì§€ ì•ŠìŠµë‹ˆë‹¤.\nê·¸ëž˜ë„ ê³„ì†í•˜ì‹œê² ìŠµë‹ˆê¹Œ?"
+var MSG_WIRELESS_WAN_WARNING="ì´ë¯¸ ë‹¤ë¥¸ ë¬´ì„  ë„¤íŠ¸ì›Œí¬ì—ì„œ ë¬´ì„ WANê¸°ëŠ¥ì„ ì‚¬ìš©í•˜ê³  ìž‡ìŠµë‹ˆë‹¤.\në‹¤ë¥¸ ë¬´ì„  ë„¤íŠ¸ì›Œí¬ì˜ ë¬´ì„ WANê¸°ëŠ¥ì„ ë„ê³  ì„¤ì •í•˜ì‹­ì‹œì˜¤."
 
-var MSG_REMOVE_PLUGIN_APP="¼±ÅÃÇÑ AppÀ» »èÁ¦ÇÏ½Ã°Ú½À´Ï±î?"
-var MSG_INSTALL_FINISH_MOVE_PAGE="AppÀÇ ¼³Ä¡°¡ ¿Ï·áµÇ¾ú½À´Ï´Ù.\n[Plug-in APP¼³Á¤] ÆäÀÌÁö¿¡¼­ ¼³Ä¡µÈ AppÀ» ½ÇÇàÇÒ ¼ö ÀÖ½À´Ï´Ù.\n[Plug-in APP¼³Á¤ È­¸éÀ¸·Î ÀÌµ¿ÇÏ½Ã°Ú½À´Ï±î?"
+var MSG_WDS_CHANNEL_WARNING="ì—°ê²°í•˜ë ¤ëŠ” APì˜ ì±„ë„ê³¼ ë‚˜ì˜ ì„¤ì •ëœ ì±„ë„ì´ ë‹¤ë¦…ë‹ˆë‹¤. \nWDSì„¤ì • í›„, [ë¬´ì„  ì„¤ì •/ë³´ì•ˆ] ë©”ë‰´ì—ì„œ ì±„ë„ì„ ë™ì¼í•˜ê²Œ êµ¬ì„±í•˜ì—¬ì•¼ í•©ë‹ˆë‹¤.\nê³„ì†í•˜ì‹œê² ìŠµë‹ˆê¹Œ?"
 
-var MSG_APACHE_RUN_WARNING="ApacheÀ¥¼­¹ö°¡ Áß´ÜµÈ »óÅÂ¿¡¼­ Á¢¼ÓÇÒ ¼ö ¾ø½À´Ï´Ù.\n[±âº» ³»Àå App°ü¸®]->[¼­ºñ½º¼³Á¤]¿¡¼­ Apache¼­¹ö¸¦ ±¸µ¿ÇÏ½Ê½Ã¿À."
+var MSG_NEW_BSS="ìƒˆ ë¬´ì„  ë„¤íŠ¸ì›Œí¬ ì¶”ê°€" 
 
-var MSG_PLUGIN_NO_USB_HDD="USB¿¡ ÀúÀåÀåÄ¡¸¦ ¿¬°áÇØ¾ß Plug-in APPÀÇ ¼³Ä¡°¡ °¡´ÉÇÕ´Ï´Ù."
+var MSG_ADD_MAC_WARNING="ì¶”ê°€ë  MACì£¼ì†Œë¥¼ ì²´í¬í•˜ì—¬ ì£¼ì‹­ì‹œì˜¤."
+var MSG_REMOVE_MAC_WARNING="ì‚­ì œë  MACì£¼ì†Œë¥¼ ì²´í¬í•˜ì—¬ ì£¼ì‹­ì‹œì˜¤."
 
-var MSG_APACHE_INVALID_FS="¼³Á¤ÇÒ DocumentRootÀÇ ÆÄÀÏ½Ã½ºÅÛÀÌ FAT32¶Ç´Â ExFATÀÔ´Ï´Ù.\nÀÌ °æ¿ì [Plug-in App±â´É]À» »ç¿ëÇÒ ¼ö ¾ø½À´Ï´Ù.\nNTFS¶Ç´Â Ext2/3/4(¸®´ª½º)ÆÄÀÏ ½Ã½ºÅÛÀ» »ç¿ëÇÒ °ÍÀ» ±ÇÀåÇÕ´Ï´Ù.\n±×·¡µµ °è¼ÓÇÏ½Ã°Ú½À´Ï±î?"
+var MSG_NEW_FOLDER_ERR="ìƒì„±í•  í´ë”ëª…ì„ ìž…ë ¥í•˜ì—¬ ì£¼ì‹­ì‹œì˜¤."
+var MSG_SELECT_FOLDER_ERR="ë°±ì—…í´ë”ë¥¼ ì„ íƒí•˜ì—¬ ì£¼ì‹­ì‹œì˜¤."
 
-var SYSCONF_ONLINE_UPGRADE_CONFIRM="¾÷±×·¹ÀÌµå ¼öÇà Áß¿¡´Â °øÀ¯±âÀÇ ¸ðµç ±â´ÉÀ» »ç¿ëÇÒ ¼ö ¾ø½À´Ï´Ù.\n°è¼ÓÇÏ½Ã°Ú½À´Ï±î?"
+var MSG_REMOVE_IPDISK_DDNS="ipDISKì„œë¹„ìŠ¤ë¥¼ ì¤‘ë‹¨í•  ê²½ìš°,ì„¤ì •ëœ ipDISKì£¼ì†Œ ë“±ë¡ì´ ì·¨ì†Œë©ë‹ˆë‹¤..\në˜í•œ, ì„¤ì •ë˜ì—ˆë˜ ipDISK ì£¼ì†Œë¥¼ ë‹¤ë¥¸ ì‚¬ìš©ìžê°€ ì‚¬ìš©í•  ìˆ˜ë„ ìžˆìŠµë‹ˆë‹¤.\nê³„ì†í•˜ì‹œê² ìŠµë‹ˆê¹Œ?"
 
-var FIRMUP_DONE_TXT="Æß¿þ¾î ¾÷±×·¹ÀÌµå°¡ ¿Ï·áµÇ¾ú½À´Ï´Ù.\nÈ®ÀÎ ¹öÆ°À» ´©¸£¸é ·Î±×ÀÎ ÆäÀÌÁö·Î ÀçÁ¢¼ÓÇÕ´Ï´Ù."
+var MSG_NEED_REBOOT_FOR_WWAN="í˜„ìž¬ êµ¬ì„±ì—ì„œ ë¬´ì„ WANì„ ì„¤ì •í•˜ë ¤ë©´ ì‹œìŠ¤í…œì„ ìž¬ë¶€íŒ…í•´ì•¼í•©ë‹ˆë‹¤.\nê³„ì†í•˜ì‹œê² ìŠµë‹ˆê¹Œ?"
 
-var DDNS_HOSTNAME_RULE_TXT="È£½ºÆ® ÀÌ¸§Àº ¿µ¹® ¹× ¼ýÀÚ¸¸ °¡´ÉÇÕ´Ï´Ù."
+var MSG_ENABLE_ONE_SERVICE_ID="ìµœì†Œ í•œëª…ì´ìƒì˜ ì‚¬ìš©ìžë¥¼ ì„¤ì •í•´ì•¼ í•©ë‹ˆë‹¤."
+var MSG_DUPLICATE_SERVICE_ID="ë™ì¼í•œ ì‚¬ìš©ìžIDë¥¼ ì„¤ì •í•  ìˆ˜ ì—†ìŠµë‹ˆë‹¤."
 
-var SYSCONF_LOGIN_CANT_REMOVE_WARNING="»õ·Î¿î °ü¸®ÀÚ °èÁ¤ ¹× ¾ÏÈ£¸¦ ÀÔ·ÂÇÏ½Ê½Ã¿À."
+var PASSWORD_NEEDED_TO_SET_THIS="í•´ë‹¹ ê¸°ëŠ¥ì€ ê´€ë¦¬ìž ê³„ì • ë° ì•”í˜¸ë¥¼ ì„¤ì • í›„ ì‚¬ìš©ê°€ëŠ¥ í•©ë‹ˆë‹¤.\nê´€ë¦¬ìž ê³„ì • ë° ì•”í˜¸ë¥¼ ì„¤ì •í•˜ê² ìŠµë‹ˆê¹Œ?"
+
+var CANT_SET_DEFAULT_ID_PASS="ì´ˆê¸°í™”ì‹œ ì„¤ì •ë˜ëŠ” ê³„ì • ë° ì•”í˜¸ë¥¼ ì‚¬ìš©í•˜ì˜€ìŠµë‹ˆë‹¤.\nê³„ì • ë° ì•”í˜¸ë¥¼ ë³€ê²½í•˜ì—¬ ì„¤ì •í•˜ì‹­ì‹œì˜¤."
+var SYSCONF_LOGIN_NEED_CAPTCHA_CODE="ë³´ì•ˆì½”ë“œë¥¼ ìž…ë ¥í•´ì•¼í•©ë‹ˆë‹¤."
+
+
+var MSG_SELECT_TORRENT_FOLDER_ERR="ë‹¤ìš´ë¡œë“œ í´ë”ë¥¼ ì„ íƒí•˜ì—¬ ì£¼ì‹­ì‹œì˜¤."
+var MSG_SELECT_MEDIA_FOLDER_ERR="ë¯¸ë””ì–´ í´ë”ë¥¼ ì„ íƒí•˜ì—¬ ì£¼ì‹­ì‹œì˜¤."
+var MSG_MEDIA_NAME_ERR="ì„œë²„ì´ë¦„ì„ ìž…ë ¥í•˜ì—¬ ì£¼ì‹­ì‹œì˜¤."
+
+var MSG_SELECT_ITUNES_FOLDER_ERR="iTunes í´ë”ë¥¼ ì„ íƒí•˜ì—¬ ì£¼ì‹­ì‹œì˜¤."
+var MSG_USB_MODE_WARNING="USBëª¨ë“œë¥¼ ë³€ê²½í•˜ê¸° ìœ„í•´ì„œëŠ” ì‹œìŠ¤í…œì„ ìž¬ì‹œìž‘í•˜ì—¬ì•¼ í•©ë‹ˆë‹¤.\nê³„ì†í•˜ì‹œê² ìŠµë‹ˆê¹Œ?"
+
+var MSG_SELECT_APACHE_DOC_FOLDER_ERR="DocumentRootë¥¼ ì„ íƒí•˜ì—¬ ì£¼ì‹­ì‹œì˜¤."
+var MSG_SELECT_APACHE_SERVER_FOLDER_ERR="ServerRootë¥¼ ì„ íƒí•˜ì—¬ ì£¼ì‹­ì‹œì˜¤."
+
+var MSG_SELECT_MYSQL_FOLDER_ERR="DBí´ë”ë¥¼ ì„ íƒí•˜ì—¬ ì£¼ì‹­ì‹œì˜¤."
+
+var MSG_REMOVE_PLUGIN_APP="ì„ íƒí•œ Appì„ ì‚­ì œí•˜ì‹œê² ìŠµë‹ˆê¹Œ?"
+var MSG_INSTALL_FINISH_MOVE_PAGE="Appì˜ ì„¤ì¹˜ê°€ ì™„ë£Œë˜ì—ˆìŠµë‹ˆë‹¤.\n[Plug-in APPì„¤ì •] íŽ˜ì´ì§€ì—ì„œ ì„¤ì¹˜ëœ Appì„ ì‹¤í–‰í•  ìˆ˜ ìžˆìŠµë‹ˆë‹¤.\n[Plug-in APPì„¤ì • í™”ë©´ìœ¼ë¡œ ì´ë™í•˜ì‹œê² ìŠµë‹ˆê¹Œ?"
+
+var MSG_APACHE_RUN_WARNING="Apacheì›¹ì„œë²„ê°€ ì¤‘ë‹¨ëœ ìƒíƒœì—ì„œ ì ‘ì†í•  ìˆ˜ ì—†ìŠµë‹ˆë‹¤.\n[ê¸°ë³¸ ë‚´ìž¥ Appê´€ë¦¬]->[ì„œë¹„ìŠ¤ì„¤ì •]ì—ì„œ Apacheì„œë²„ë¥¼ êµ¬ë™í•˜ì‹­ì‹œì˜¤."
+
+var MSG_PLUGIN_NO_USB_HDD="USBì— ì €ìž¥ìž¥ì¹˜ë¥¼ ì—°ê²°í•´ì•¼ Plug-in APPì˜ ì„¤ì¹˜ê°€ ê°€ëŠ¥í•©ë‹ˆë‹¤."
+
+var MSG_APACHE_INVALID_FS="ì„¤ì •í•  DocumentRootì˜ íŒŒì¼ì‹œìŠ¤í…œì´ FAT32ë˜ëŠ” ExFATìž…ë‹ˆë‹¤.\nì´ ê²½ìš° [Plug-in Appê¸°ëŠ¥]ì„ ì‚¬ìš©í•  ìˆ˜ ì—†ìŠµë‹ˆë‹¤.\nNTFSë˜ëŠ” Ext2/3/4(ë¦¬ëˆ…ìŠ¤)íŒŒì¼ ì‹œìŠ¤í…œì„ ì‚¬ìš©í•  ê²ƒì„ ê¶Œìž¥í•©ë‹ˆë‹¤.\nê·¸ëž˜ë„ ê³„ì†í•˜ì‹œê² ìŠµë‹ˆê¹Œ?"
+
+var SYSCONF_ONLINE_UPGRADE_CONFIRM="ì—…ê·¸ë ˆì´ë“œ ìˆ˜í–‰ ì¤‘ì—ëŠ” ê³µìœ ê¸°ì˜ ëª¨ë“  ê¸°ëŠ¥ì„ ì‚¬ìš©í•  ìˆ˜ ì—†ìŠµë‹ˆë‹¤.\nê³„ì†í•˜ì‹œê² ìŠµë‹ˆê¹Œ?"
+
+var FIRMUP_DONE_TXT="íŽŒì›¨ì–´ ì—…ê·¸ë ˆì´ë“œê°€ ì™„ë£Œë˜ì—ˆìŠµë‹ˆë‹¤.\ní™•ì¸ ë²„íŠ¼ì„ ëˆ„ë¥´ë©´ ë¡œê·¸ì¸ íŽ˜ì´ì§€ë¡œ ìž¬ì ‘ì†í•©ë‹ˆë‹¤."
+
+var DDNS_HOSTNAME_RULE_TXT="í˜¸ìŠ¤íŠ¸ ì´ë¦„ì€ ì˜ë¬¸ ë° ìˆ«ìžë§Œ ê°€ëŠ¥í•©ë‹ˆë‹¤."
+
+var SYSCONF_LOGIN_CANT_REMOVE_WARNING="ìƒˆë¡œìš´ ê´€ë¦¬ìž ê³„ì • ë° ì•”í˜¸ë¥¼ ìž…ë ¥í•˜ì‹­ì‹œì˜¤."
 
 // USE_SYSCONF_MISC2
-var SYSCONF_HOSTNAME_WARNING="°øÀ¯±â ÀÌ¸§Àº 1±ÛÀÚ ÀÌ»óÀÌ¾î¾ß ÇÕ´Ï´Ù."
-var SYSCONF_HOSTNAME_SPECIAL_WARNING="°øÀ¯±â ÀÌ¸§¿¡ Æ¯¼ö¹®ÀÚ ¹× °ø¹éÀº µé¾î°¥ ¼ö ¾ø½À´Ï´Ù."
-var SYSCONF_LED_START_TIME_ALERT="½ÃÀÛ½Ã°£ÀÌ ³¡³ª´Â ½Ã°£º¸´Ù Å¬ ¼ö ¾ø½À´Ï´Ù."
-var SYSCONF_APPLY_BUTTON_NAME="´Ù½Ã ½ÃÀÛ"
-var SYSCONF_APPLY_ORIGINAL_VALUE="Àû¿ë"
-var SYSCONF_FAN_ALERT="¿Âµµ¹üÀ§ ¼³Á¤ÀÌ Àß¸øµÇ¾ú½À´Ï´Ù."
+var SYSCONF_HOSTNAME_WARNING="ê³µìœ ê¸° ì´ë¦„ì€ 1ê¸€ìž ì´ìƒì´ì–´ì•¼ í•©ë‹ˆë‹¤."
+var SYSCONF_HOSTNAME_SPECIAL_WARNING="ê³µìœ ê¸° ì´ë¦„ì— íŠ¹ìˆ˜ë¬¸ìž ë° ê³µë°±ì€ ë“¤ì–´ê°ˆ ìˆ˜ ì—†ìŠµë‹ˆë‹¤."
+var SYSCONF_LED_START_TIME_ALERT="ì‹œìž‘ì‹œê°„ì´ ëë‚˜ëŠ” ì‹œê°„ë³´ë‹¤ í´ ìˆ˜ ì—†ìŠµë‹ˆë‹¤."
+var SYSCONF_APPLY_BUTTON_NAME="ë‹¤ì‹œ ì‹œìž‘"
+var SYSCONF_APPLY_ORIGINAL_VALUE="ì ìš©"
+var SYSCONF_FAN_ALERT="ì˜¨ë„ë²”ìœ„ ì„¤ì •ì´ ìž˜ëª»ë˜ì—ˆìŠµë‹ˆë‹¤."
 
 
 // NASCONF
-var MSG_NASCONF_SAME_AS_MGMT_PORT="°øÀ¯±â °ü¸®Æ÷Æ®¿Í µ¿ÀÏÇÑ Æ÷Æ®¸¦ ÁöÁ¤ÇÏ¿´½À´Ï´Ù.\n°øÀ¯±â °ü¸®Æ÷Æ® º¯°æ ÈÄ, ÇØ´ç Æ÷Æ®¸¦ »ç¿ëÇÒ ¼ö ÀÖ½À´Ï´Ù.\n[½Ã½ºÅÛ]->[±âÅ¸¼³Á¤]¿¡¼­ °øÀ¯±â °ü¸®Æ÷Æ®¸¦ º¯°æÇÏ°Ú½À´Ï±î?"
+var MSG_NASCONF_SAME_AS_MGMT_PORT="ê³µìœ ê¸° ê´€ë¦¬í¬íŠ¸ì™€ ë™ì¼í•œ í¬íŠ¸ë¥¼ ì§€ì •í•˜ì˜€ìŠµë‹ˆë‹¤.\nê³µìœ ê¸° ê´€ë¦¬í¬íŠ¸ ë³€ê²½ í›„, í•´ë‹¹ í¬íŠ¸ë¥¼ ì‚¬ìš©í•  ìˆ˜ ìžˆìŠµë‹ˆë‹¤.\n[ì‹œìŠ¤í…œ]->[ê¸°íƒ€ì„¤ì •]ì—ì„œ ê³µìœ ê¸° ê´€ë¦¬í¬íŠ¸ë¥¼ ë³€ê²½í•˜ê² ìŠµë‹ˆê¹Œ?"
 
 // WIRELESSCONF
-var MSG_5G_LOW_CHANNEL_WARNING="[Ã¤³Î36-Ã¤³Î48]Àº ÀüÆÄ¹ý»ó ÀúÃâ·Â Ã¤³Î·Î ±ÔÁ¤µÇ¾î ÀÖ½À´Ï´Ù.\n¿ø°Å¸® Á¢¼Ó ½Ã¿¡´Â  [Ã¤³Î149-Ã¤³Î161] »ç¿ëÀ» ÃßÃµÇÕ´Ï´Ù.\n°è¼ÓÇÏ½Ã°Ú½À´Ï±î?"
+var MSG_5G_LOW_CHANNEL_WARNING="[ì±„ë„36-ì±„ë„48]ì€ ì „íŒŒë²•ìƒ ì €ì¶œë ¥ ì±„ë„ë¡œ ê·œì •ë˜ì–´ ìžˆìŠµë‹ˆë‹¤.\nì›ê±°ë¦¬ ì ‘ì† ì‹œì—ëŠ”  [ì±„ë„149-ì±„ë„161] ì‚¬ìš©ì„ ì¶”ì²œí•©ë‹ˆë‹¤.\nê³„ì†í•˜ì‹œê² ìŠµë‹ˆê¹Œ?"
 
 
-var MSG_INVALID_SSID_STRING="´Â ³×Æ®¿öÅ©ÀÌ¸§(SSID)¿¡ »ç¿ëÇÒ ¼ö ¾ø½À´Ï´Ù."
+var MSG_INVALID_SSID_STRING="ëŠ” ë„¤íŠ¸ì›Œí¬ì´ë¦„(SSID)ì— ì‚¬ìš©í•  ìˆ˜ ì—†ìŠµë‹ˆë‹¤."
 
 
-var MSG_INVALID_FOLDER_STR="Àß¸øµÈ Æú´õ ÀÌ¸§À» ÀÔ·ÂÇÏ¿´½À´Ï´Ù."
-var MSG_INVALID_FOLDER_NON_ASCII_STR="ÇÑ±Û Æú´õ¸íÀ» ÀÔ·ÂÇÒ ¼ö ¾ø½À´Ï´Ù."
-var MSG_INVALID_FOLDER_2DOTS_STR=".. Àº Æú´õ¸íÀ¸·Î »ç¿ëÇÒ ¼ö ¾ø½À´Ï´Ù."
-var MSG_INVALID_FOLDER_DOT_STR=". À¸·Î ½ÃÀÛµÈ Æú´õ¸íÀ» »ç¿ëÇÒ ¼ö ¾ø½À´Ï´Ù."
-var MSG_CANT_BE_USED="´Â »ç¿ëÇÒ ¼ö ¾ø½À´Ï´Ù."
-var MSG_INVALID_PASSWORD_STR="Àß¸øµÈ ¾ÏÈ£¸¦ ÀÔ·ÂÇÏ¿´½À´Ï´Ù."
+var MSG_INVALID_FOLDER_STR="ìž˜ëª»ëœ í´ë” ì´ë¦„ì„ ìž…ë ¥í•˜ì˜€ìŠµë‹ˆë‹¤."
+var MSG_INVALID_FOLDER_NON_ASCII_STR="í•œê¸€ í´ë”ëª…ì„ ìž…ë ¥í•  ìˆ˜ ì—†ìŠµë‹ˆë‹¤."
+var MSG_INVALID_FOLDER_2DOTS_STR=".. ì€ í´ë”ëª…ìœ¼ë¡œ ì‚¬ìš©í•  ìˆ˜ ì—†ìŠµë‹ˆë‹¤."
+var MSG_INVALID_FOLDER_DOT_STR=". ìœ¼ë¡œ ì‹œìž‘ëœ í´ë”ëª…ì„ ì‚¬ìš©í•  ìˆ˜ ì—†ìŠµë‹ˆë‹¤."
+var MSG_CANT_BE_USED="ëŠ” ì‚¬ìš©í•  ìˆ˜ ì—†ìŠµë‹ˆë‹¤."
+var MSG_INVALID_PASSWORD_STR="ìž˜ëª»ëœ ì•”í˜¸ë¥¼ ìž…ë ¥í•˜ì˜€ìŠµë‹ˆë‹¤."
 
-var MSG_DYNAMIC_CHANNEL_WARNING="ÀÚµ¿Ã¤³Î ÇØÁ¦½Ã [µ¿ÀûÃ¤³Îº¯°æ] ±â´Éµµ µ¿½Ã¿¡ ÇØÁ¦ µË´Ï´Ù.\n°è¼ÓÇÏ½Ã°Ú½À´Ï±î?" 
+var MSG_DYNAMIC_CHANNEL_WARNING="ìžë™ì±„ë„ í•´ì œì‹œ [ë™ì ì±„ë„ë³€ê²½] ê¸°ëŠ¥ë„ ë™ì‹œì— í•´ì œ ë©ë‹ˆë‹¤.\nê³„ì†í•˜ì‹œê² ìŠµë‹ˆê¹Œ?" 
 
-var MSG_RESTART_PORT_ROLE="À¯¼± Æ÷Æ® ±â´É º¯°æ ½Ã ½Ã½ºÅÛÀÌ Àç½ÃÀÛµË´Ï´Ù.\n½Ã½ºÅÛÀÌ Àç½ÃÀÛ µÈ ÀÌÈÄ, ¸Á ±¸¼º¿¡ µû¶ó¼­ °ü¸®µµ±¸·ÎÀÇ ÀÚµ¿ ÀçÁ¢¼ÓÀÌ ½ÇÆÐÇÒ ¼ö ÀÖ½À´Ï´Ù.\n°è¼ÓÇÏ½Ã°Ú½À´Ï±î?"
+var MSG_RESTART_PORT_ROLE="ìœ ì„  í¬íŠ¸ ê¸°ëŠ¥ ë³€ê²½ ì‹œ ì‹œìŠ¤í…œì´ ìž¬ì‹œìž‘ë©ë‹ˆë‹¤.\nì‹œìŠ¤í…œì´ ìž¬ì‹œìž‘ ëœ ì´í›„, ë§ êµ¬ì„±ì— ë”°ë¼ì„œ ê´€ë¦¬ë„êµ¬ë¡œì˜ ìžë™ ìž¬ì ‘ì†ì´ ì‹¤íŒ¨í•  ìˆ˜ ìžˆìŠµë‹ˆë‹¤.\nê³„ì†í•˜ì‹œê² ìŠµë‹ˆê¹Œ?"
 
-var SYSCONF_INVALID_HOSTNAME="Àß¸øµÈ È£½ºÆ®ÀÌ¸§ÀÔ´Ï´Ù."
-var UNPERMITTED_STR_PREFIX="»ç¿ëÇÒ¼ö ¾ø´Â ¹®ÀÚ :"
-var SYSCONF_INVALID_TEMPERATURE="Àß¸øµÈ ¿Âµµ¸¦ ÀÔ·ÂÇÏ¿´½À´Ï´Ù.(¿Âµµ <= 100)"
+var SYSCONF_INVALID_HOSTNAME="ìž˜ëª»ëœ í˜¸ìŠ¤íŠ¸ì´ë¦„ìž…ë‹ˆë‹¤."
+var UNPERMITTED_STR_PREFIX="ì‚¬ìš©í• ìˆ˜ ì—†ëŠ” ë¬¸ìž :"
+var SYSCONF_INVALID_TEMPERATURE="ìž˜ëª»ëœ ì˜¨ë„ë¥¼ ìž…ë ¥í•˜ì˜€ìŠµë‹ˆë‹¤.(ì˜¨ë„ <= 100)"
 
-var SYSCONF_SET_URL_TAG="URL TAG°ªÀ» ÀÔ·ÂÇÏ½Ê½Ã¿À."
+var SYSCONF_SET_URL_TAG="URL TAGê°’ì„ ìž…ë ¥í•˜ì‹­ì‹œì˜¤."
 </script>
 
