@@ -86,17 +86,17 @@ var MSG_TWINIP_CONFIRM_WARNING='System will restart to apply Twin IP configurati
 var MSG_WAN_FOR_LAN_WARNING='System will restart to change WAN port function\nContinue?';
 
 // common
-var MODIFY_OP='수정'
-var MSG_INVALID_HWADDR="MAC 주소가 잘못되었습니다." 
-var MSG_DELETE_RULE_CONFIRM="규칙을 삭제하시겠습니까?" 
-var MSG_SELECT_RULE_TO_DEL="삭제할 규칙을 선택해야 합니다." 
-var MSG_ALL_STOP_RULE="모든 동작을 멈추시겠습니까?"
+var MODIFY_OP='Modify'
+var MSG_INVALID_HWADDR="Invalid MAC Address." 
+var MSG_DELETE_RULE_CONFIRM="Rule will be removed.\nAre you sure to continue?" 
+var MSG_SELECT_RULE_TO_DEL="Select a rule to be deleted."
+var MSG_ALL_STOP_RULE="Do you want to stop all rules?"
 
-var MSG_HWADDR_NO_INPUT="MAC 주소를 입력하셔야 합니다."
-var MSG_SELECT_MAC_REMOVED="삭제할 MAC주소를 선택해 주십시오."
+var MSG_HWADDR_NO_INPUT="You must enter the MAC address."
+var MSG_SELECT_MAC_REMOVED="Please select the MAC address to be deleted."
 
-var MSG_OPENER_PAGE_MOVED="설정 페이지가 이동되었습니다."
-var MSG_INVALID_VALUE="입력값이 잘못 되었습니다."
+var MSG_OPENER_PAGE_MOVED="Page is Moved."
+var MSG_INVALID_VALUE="Invalid value."
 
 
 // wireless_config_wizard
